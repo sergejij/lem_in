@@ -5,10 +5,6 @@ CMakeFiles/lem_debag.dir/main.c.o: ../lem_in.h
 CMakeFiles/lem_debag.dir/main.c.o: ../libft/libft.h
 CMakeFiles/lem_debag.dir/main.c.o: ../main.c
 
-CMakeFiles/lem_debag.dir/solution.c.o: ../lem_in.h
-CMakeFiles/lem_debag.dir/solution.c.o: ../libft/libft.h
-CMakeFiles/lem_debag.dir/solution.c.o: ../solution.c
-
 CMakeFiles/lem_debag.dir/validation/check_parts.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/validation/check_parts.c.o: .././libft/libft.h
 CMakeFiles/lem_debag.dir/validation/check_parts.c.o: ../validation/check_parts.c
@@ -36,6 +32,10 @@ CMakeFiles/lem_debag.dir/validation/make_map.c.o: ../validation/make_map.c
 CMakeFiles/lem_debag.dir/validation/read_and_save.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/validation/read_and_save.c.o: .././libft/libft.h
 CMakeFiles/lem_debag.dir/validation/read_and_save.c.o: ../validation/read_and_save.c
+
+CMakeFiles/lem_debag.dir/validation/solution.c.o: .././lem_in.h
+CMakeFiles/lem_debag.dir/validation/solution.c.o: .././libft/libft.h
+CMakeFiles/lem_debag.dir/validation/solution.c.o: ../validation/solution.c
 
 CMakeFiles/lem_debag.dir/validation/validation.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/validation/validation.c.o: .././libft/libft.h

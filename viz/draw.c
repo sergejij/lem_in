@@ -42,40 +42,43 @@ int		set_colors(unsigned char o, unsigned char r, \
 	return (res);
 }
 
-static void		plot(int x, int y, t_img *win)
+static void		plot(int x, int y, t_img *win, int color)
 {
 	int		*mas;
-	int		color1;
-	int 	color2;
 
-	color2 = set_colors(50, 255, 0, 0);
-	color1 = set_colors(50, 255, 0, 0);
 	if (x >= WIDTH || y >= HEIGHT || x < 0 || y < 0)
 		return ;
 	mas = (int *)win->data;
-	mas[x + y * win->size_line / 4] = color1;
-//	if (mas[x - 1 + (y) * win->size_line / 4] == 0)
-		mas[x - 1 + (y) * win->size_line / 4] = color2;
-//	if (mas[x + 1 + (y) * win->size_line / 4] == 0)
-		mas[x + 1 + (y) * win->size_line / 4] = color2;
+	mas[x + y * win->size_line / 4] = color;
+////	if (mas[x - 1 + (y) * win->size_line / 4] == 0)
+//		mas[x - 1 + (y) * win->size_line / 4] = color2;
+////	if (mas[x + 1 + (y) * win->size_line / 4] == 0)
+//		mas[x + 1 + (y) * win->size_line / 4] = color2;
 }
 
 void		draw_room(t_room *room, t_mlx *mlx)
 {
 	t_pos	pos;
 	int 	j;
+	int 	color;
 
+	if (room->start)
+		color = set_colors(0, 255, 255, 0);
+	else if (room->end)
+		color = set_colors(0, 0, 255, 0);
+	else
+		color = set_colors(0, 255, 0, 0);
 	set_pos(&pos, mlx, room);
 	while (pos.x >= pos.y)
 	{
-		plot(pos.x0 + pos.x, pos.y0 + pos.y, mlx->img);
-		plot(pos.x0 + pos.y, pos.y0 + pos.x, mlx->img);
-		plot(pos.x0 - pos.y, pos.y0 + pos.x, mlx->img);
-		plot(pos.x0 - pos.x, pos.y0 + pos.y, mlx->img);
-		plot(pos.x0 - pos.x, pos.y0 - pos.y, mlx->img);
-		plot(pos.x0 - pos.y, pos.y0 - pos.x, mlx->img);
-		plot(pos.x0 + pos.y, pos.y0 - pos.x, mlx->img);
-		plot(pos.x0 + pos.x, pos.y0 - pos.y, mlx->img);
+		plot(pos.x0 + pos.x, pos.y0 + pos.y, mlx->img, color);
+		plot(pos.x0 + pos.y, pos.y0 + pos.x, mlx->img, color);
+		plot(pos.x0 - pos.y, pos.y0 + pos.x, mlx->img, color);
+		plot(pos.x0 - pos.x, pos.y0 + pos.y, mlx->img, color);
+		plot(pos.x0 - pos.x, pos.y0 - pos.y, mlx->img, color);
+		plot(pos.x0 - pos.y, pos.y0 - pos.x, mlx->img, color);
+		plot(pos.x0 + pos.y, pos.y0 - pos.x, mlx->img, color);
+		plot(pos.x0 + pos.x, pos.y0 - pos.y, mlx->img, color);
 		if (pos.err <= 0)
 			pos.err += 2 * ++pos.y + 1;
 		if (pos.err > 0)

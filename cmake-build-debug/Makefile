@@ -150,33 +150,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/main.c.s
 .PHONY : main.c.s
 
-solution.o: solution.c.o
-
-.PHONY : solution.o
-
-# target to build an object file
-solution.c.o:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution.c.o
-.PHONY : solution.c.o
-
-solution.i: solution.c.i
-
-.PHONY : solution.i
-
-# target to preprocess a source file
-solution.c.i:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution.c.i
-.PHONY : solution.c.i
-
-solution.s: solution.c.s
-
-.PHONY : solution.s
-
-# target to generate assembly for a file
-solution.c.s:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution.c.s
-.PHONY : solution.c.s
-
 validation/check_parts.o: validation/check_parts.c.o
 
 .PHONY : validation/check_parts.o
@@ -366,6 +339,33 @@ validation/read_and_save.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/read_and_save.c.s
 .PHONY : validation/read_and_save.c.s
 
+validation/solution.o: validation/solution.c.o
+
+.PHONY : validation/solution.o
+
+# target to build an object file
+validation/solution.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.o
+.PHONY : validation/solution.c.o
+
+validation/solution.i: validation/solution.c.i
+
+.PHONY : validation/solution.i
+
+# target to preprocess a source file
+validation/solution.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.i
+.PHONY : validation/solution.c.i
+
+validation/solution.s: validation/solution.c.s
+
+.PHONY : validation/solution.s
+
+# target to generate assembly for a file
+validation/solution.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.s
+.PHONY : validation/solution.c.s
+
 validation/validation.o: validation/validation.c.o
 
 .PHONY : validation/validation.o
@@ -405,9 +405,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... solution.o"
-	@echo "... solution.i"
-	@echo "... solution.s"
 	@echo "... validation/check_parts.o"
 	@echo "... validation/check_parts.i"
 	@echo "... validation/check_parts.s"
@@ -429,6 +426,9 @@ help:
 	@echo "... validation/read_and_save.o"
 	@echo "... validation/read_and_save.i"
 	@echo "... validation/read_and_save.s"
+	@echo "... validation/solution.o"
+	@echo "... validation/solution.i"
+	@echo "... validation/solution.s"
 	@echo "... validation/validation.o"
 	@echo "... validation/validation.i"
 	@echo "... validation/validation.s"

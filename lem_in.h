@@ -34,11 +34,17 @@ typedef struct		s_room
 	int				weght;
 }					t_room;
 
+typedef struct		s_way
+{
+	int				*links;
+}					t_way;
+
 typedef struct		s_map
 {
 	int 			ants;
 	int 			num_of_rooms;
 	t_room			*rooms;
+	t_way			*ways;
 }					t_map;
 
 /*
@@ -105,6 +111,7 @@ int 		make_links(t_room *rooms, char **split, int num);
  */
 void ft_check_next_rooms(t_map *nest, int current);
 int ft_room_less_weght(t_map *nest);
+void main_solution(t_map *nest);
 void	ft_solution(t_map *nest);
 
 #endif

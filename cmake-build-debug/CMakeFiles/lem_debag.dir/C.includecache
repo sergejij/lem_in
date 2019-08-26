@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+.././lem_in.h
+libft/libft.h
+.././libft/libft.h
+stdio.h
+-
+
+.././libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
 /Users/ubartemi/Desktop/lem/lem_in.h
 libft/libft.h
 /Users/ubartemi/Desktop/lem/libft/libft.h
@@ -20,7 +34,43 @@ stdlib.h
 unistd.h
 -
 
-/Users/ubartemi/Desktop/lem/solution.c
+/Users/ubartemi/Desktop/lem/main.c
 lem_in.h
 /Users/ubartemi/Desktop/lem/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/check_parts.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/define.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/find.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/free.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/make_links.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/make_map.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/read_and_save.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/solution.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
+
+/Users/ubartemi/Desktop/lem/validation/validation.c
+lem_in.h
+/Users/ubartemi/Desktop/lem/validation/lem_in.h
 

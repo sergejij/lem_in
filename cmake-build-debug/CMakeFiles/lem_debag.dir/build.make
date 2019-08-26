@@ -174,18 +174,18 @@ CMakeFiles/lem_debag.dir/validation/make_links.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/validation/make_links.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem/validation/make_links.c -o CMakeFiles/lem_debag.dir/validation/make_links.c.s
 
-CMakeFiles/lem_debag.dir/solution.c.o: CMakeFiles/lem_debag.dir/flags.make
-CMakeFiles/lem_debag.dir/solution.c.o: ../solution.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lem_debag.dir/solution.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_debag.dir/solution.c.o   -c /Users/ubartemi/Desktop/lem/solution.c
+CMakeFiles/lem_debag.dir/validation/solution.c.o: CMakeFiles/lem_debag.dir/flags.make
+CMakeFiles/lem_debag.dir/validation/solution.c.o: ../validation/solution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/lem_debag.dir/validation/solution.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_debag.dir/validation/solution.c.o   -c /Users/ubartemi/Desktop/lem/validation/solution.c
 
-CMakeFiles/lem_debag.dir/solution.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_debag.dir/solution.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem/solution.c > CMakeFiles/lem_debag.dir/solution.c.i
+CMakeFiles/lem_debag.dir/validation/solution.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_debag.dir/validation/solution.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem/validation/solution.c > CMakeFiles/lem_debag.dir/validation/solution.c.i
 
-CMakeFiles/lem_debag.dir/solution.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/solution.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem/solution.c -o CMakeFiles/lem_debag.dir/solution.c.s
+CMakeFiles/lem_debag.dir/validation/solution.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/validation/solution.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem/validation/solution.c -o CMakeFiles/lem_debag.dir/validation/solution.c.s
 
 # Object files for target lem_debag
 lem_debag_OBJECTS = \
@@ -198,7 +198,7 @@ lem_debag_OBJECTS = \
 "CMakeFiles/lem_debag.dir/validation/free.c.o" \
 "CMakeFiles/lem_debag.dir/validation/make_map.c.o" \
 "CMakeFiles/lem_debag.dir/validation/make_links.c.o" \
-"CMakeFiles/lem_debag.dir/solution.c.o"
+"CMakeFiles/lem_debag.dir/validation/solution.c.o"
 
 # External object files for target lem_debag
 lem_debag_EXTERNAL_OBJECTS =
@@ -212,7 +212,7 @@ lem_debag: CMakeFiles/lem_debag.dir/validation/check_parts.c.o
 lem_debag: CMakeFiles/lem_debag.dir/validation/free.c.o
 lem_debag: CMakeFiles/lem_debag.dir/validation/make_map.c.o
 lem_debag: CMakeFiles/lem_debag.dir/validation/make_links.c.o
-lem_debag: CMakeFiles/lem_debag.dir/solution.c.o
+lem_debag: CMakeFiles/lem_debag.dir/validation/solution.c.o
 lem_debag: CMakeFiles/lem_debag.dir/build.make
 lem_debag: ../libft/libft.a
 lem_debag: CMakeFiles/lem_debag.dir/link.txt

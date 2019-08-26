@@ -8,7 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_debag.dir/validation/free.c.o"
   "CMakeFiles/lem_debag.dir/validation/make_map.c.o"
   "CMakeFiles/lem_debag.dir/validation/make_links.c.o"
-  "CMakeFiles/lem_debag.dir/solution.c.o"
+  "CMakeFiles/lem_debag.dir/validation/solution.c.o"
   "lem_debag.pdb"
   "lem_debag"
 )

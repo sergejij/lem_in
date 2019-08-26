@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 SRC_VAL = read_and_save.c validation.c find.c define.c check_parts.c \
-	free.c make_map.c make_links.c ../solution.c
+	free.c make_map.c make_links.c solution.c
 OBJ_VAL = $(SRC_VAL:.c=.o)
 
 SRC_LEM = main.c
