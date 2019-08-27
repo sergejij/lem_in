@@ -48,10 +48,10 @@ RM = /Users/ubartemi/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/lem
+CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/lem/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/lem/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,60 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/main.c.s
 .PHONY : main.c.s
+
+solution/solution.o: solution/solution.c.o
+
+.PHONY : solution/solution.o
+
+# target to build an object file
+solution/solution.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/solution.c.o
+.PHONY : solution/solution.c.o
+
+solution/solution.i: solution/solution.c.i
+
+.PHONY : solution/solution.i
+
+# target to preprocess a source file
+solution/solution.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/solution.c.i
+.PHONY : solution/solution.c.i
+
+solution/solution.s: solution/solution.c.s
+
+.PHONY : solution/solution.s
+
+# target to generate assembly for a file
+solution/solution.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/solution.c.s
+.PHONY : solution/solution.c.s
+
+solution/ways.o: solution/ways.c.o
+
+.PHONY : solution/ways.o
+
+# target to build an object file
+solution/ways.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/ways.c.o
+.PHONY : solution/ways.c.o
+
+solution/ways.i: solution/ways.c.i
+
+.PHONY : solution/ways.i
+
+# target to preprocess a source file
+solution/ways.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/ways.c.i
+.PHONY : solution/ways.c.i
+
+solution/ways.s: solution/ways.c.s
+
+.PHONY : solution/ways.s
+
+# target to generate assembly for a file
+solution/ways.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/ways.c.s
+.PHONY : solution/ways.c.s
 
 validation/check_parts.o: validation/check_parts.c.o
 
@@ -339,33 +393,6 @@ validation/read_and_save.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/read_and_save.c.s
 .PHONY : validation/read_and_save.c.s
 
-validation/solution.o: validation/solution.c.o
-
-.PHONY : validation/solution.o
-
-# target to build an object file
-validation/solution.c.o:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.o
-.PHONY : validation/solution.c.o
-
-validation/solution.i: validation/solution.c.i
-
-.PHONY : validation/solution.i
-
-# target to preprocess a source file
-validation/solution.c.i:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.i
-.PHONY : validation/solution.c.i
-
-validation/solution.s: validation/solution.c.s
-
-.PHONY : validation/solution.s
-
-# target to generate assembly for a file
-validation/solution.c.s:
-	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/validation/solution.c.s
-.PHONY : validation/solution.c.s
-
 validation/validation.o: validation/validation.c.o
 
 .PHONY : validation/validation.o
@@ -405,6 +432,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... solution/solution.o"
+	@echo "... solution/solution.i"
+	@echo "... solution/solution.s"
+	@echo "... solution/ways.o"
+	@echo "... solution/ways.i"
+	@echo "... solution/ways.s"
 	@echo "... validation/check_parts.o"
 	@echo "... validation/check_parts.i"
 	@echo "... validation/check_parts.s"
@@ -426,9 +459,6 @@ help:
 	@echo "... validation/read_and_save.o"
 	@echo "... validation/read_and_save.i"
 	@echo "... validation/read_and_save.s"
-	@echo "... validation/solution.o"
-	@echo "... validation/solution.i"
-	@echo "... validation/solution.s"
 	@echo "... validation/validation.o"
 	@echo "... validation/validation.i"
 	@echo "... validation/validation.s"

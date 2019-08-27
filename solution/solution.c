@@ -41,7 +41,7 @@ void ft_check_next_rooms(t_map *nest, int current)
 	i = 0;
 	while (i < nest->rooms[current].num_of_links)
 	{
-		nest->rooms[(nest->rooms[current].links[i])].weght++;;
+		nest->rooms[(nest->rooms[current].links[i])].weght++;
 		i++;
 	}
 	nest->rooms[current].visited = 1;
@@ -66,37 +66,8 @@ void	ft_solution(t_map *nest)
 	//name connect map->rooms[map->rooms[i].links[j]].name
 }
 
-int ft_count_ways(t_map *nest)
-{
-	int index;
-	int res;
-	int index_links;
-
-	index = -1;
-	res = 0;
-	while (++index < nest->num_of_rooms)
-	{
-		index_links = -1;
-		while (++index_links < nest->rooms[index].num_of_links)
-		{
-			if (nest->rooms[index].links[index_links] > index)
-				res += 1;
-		}
-	}
-	return (res);
-}
-
-void ft_malloc_ways(t_map *nest)
-{
-	int num_ways;
-
-	num_ways = ft_count_ways(nest);
-	(t_way *)ft_memalloc(sizeof(t_way) * num_ways);
-	// еще в него надо выделить память в линкс и как-то туда записывать значения
-}
-
 void main_solution(t_map *nest)
 {
-	ft_malloc_ways(nest);
+	ft_malloc_and_fill__ways(nest);
 	ft_solution(nest);
 }

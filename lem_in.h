@@ -36,16 +36,26 @@ typedef struct		s_room
 
 typedef struct		s_way
 {
-	int				*links;
+	int 			room1;
+	int 			room2;
 }					t_way;
+
+typedef struct		s_paths
+{
+
+}					t_paths;
 
 typedef struct		s_map
 {
 	int 			ants;
 	int 			num_of_rooms;
+	int 			num_of_ways;
 	t_room			*rooms;
 	t_way			*ways;
 }					t_map;
+
+
+
 
 /*
  *  make_map.c
@@ -106,12 +116,23 @@ int 	check_part4(char **split);
  */
 
 int 		make_links(t_room *rooms, char **split, int num);
+
 /*
  * solution.c
  */
+
+
 void ft_check_next_rooms(t_map *nest, int current);
 int ft_room_less_weght(t_map *nest);
 void main_solution(t_map *nest);
 void	ft_solution(t_map *nest);
+
+
+/*
+ * ways.c
+ */
+int ft_count_ways(t_map *nest);
+void ft_malloc_and_fill__ways(t_map *nest);
+int ft_find_index_ways(t_map *nest, int first, int second);
 
 #endif
