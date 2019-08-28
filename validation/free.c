@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "../lem_in.h"
 
 void		free_rooms(t_room **rooms, int num)
 {
@@ -49,7 +49,7 @@ void			show_map(t_map *map)
 		else if (map->rooms[i].end)
 			printf("End\n");
 		j = -1;
-		printf("%d - weight\n", map->rooms[i].weght);
+		printf("%d - num_of_links\n", map->rooms[i].num_of_links);
 		while (++j < map->rooms[i].num_of_links && map->rooms[i].links)
 			printf("%s\n", map->rooms[map->rooms[i].links[j]].name);
 	}

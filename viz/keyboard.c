@@ -41,9 +41,9 @@ int				key_event(int key_code, t_mlx *win)
 {
 	if (key_code == 53)
 		exit(0);
-	if (key_code >= 123 && key_code <= 126)
+	else if (key_code >= 123 && key_code <= 126)
 		move(key_code, win);
-	if (key_code == 69 || key_code == 78)
+	else if (key_code == 69 || key_code == 78)
 		zoom(key_code, win);
 	mlx_clear_window(win->mlx, win->win);
 	draw(win);

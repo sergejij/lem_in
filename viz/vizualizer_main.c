@@ -86,7 +86,7 @@ int 			main()
 	turns = get_turns(input);
 	map = ft_strdup(input);
 	free(input);
-	printf("%s%s", turns, map);
+	printf("%s", turns);
 	if (!(nest = make_map(map)))
 	{
 		ft_putstr("Error\n");

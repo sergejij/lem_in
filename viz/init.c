@@ -20,7 +20,6 @@ static int		close_window(void *param)
 
 void			hooks(t_mlx *mlx)
 {
-
 	mlx_hook(mlx->win, 17, 0, close_window, mlx->win);
 	mlx_hook(mlx->win, 2, 0, key_event, mlx);
 	mlx_loop(mlx->mlx);

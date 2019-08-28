@@ -1,4 +1,4 @@
-#include "lem_in.h"
+#include "../lem_in.h"
 
 int	ft_found_start(t_map *nest)
 {

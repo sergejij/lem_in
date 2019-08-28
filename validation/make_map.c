@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "../lem_in.h"
 
 int 		count_rooms(char **split)
 {
@@ -80,6 +80,6 @@ t_map		*make_map(char *map)
 		free_map(&new_map);
 		return (0);
 	}
-//	show_map(new_map);
+	show_map(new_map);
 	return (new_map);
 }

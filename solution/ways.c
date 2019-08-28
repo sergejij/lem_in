@@ -1,4 +1,4 @@
-#include "lem_in.h"
+#include "../lem_in.h"
 
 
 int ft_find_index_ways(t_map *nest, int first, int second)

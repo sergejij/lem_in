@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "../lem_in.h"
 
 void		link_rooms(t_room *rooms, char **split, int num)
 {
@@ -81,11 +81,9 @@ int 		make_links(t_room *rooms, char **split, int num)
 	int 	j;
 
 	i = -1;
-	if (!(check_links(split)))
-		return (0);
 	while (split[++i])
 	{
-		if (is_link(split[i]))
+		if (is_link(split[i]) && check_duplicates_links(split, i))
 		{
 			if (!split_link(split[i], rooms, num))
 				return (0);
@@ -94,8 +92,6 @@ int 		make_links(t_room *rooms, char **split, int num)
 	i = -1;
 	while (++i < num)
 	{
-//		if (!(rooms[i].links = (int *)ft_memalloc(sizeof(int) * rooms[i].num_of_links)))
-//			return (0);
 		rooms[i].links = (int *)ft_memalloc(sizeof(int) * rooms[i].num_of_links);
 		j = -1;
 		while (++j < rooms[i].num_of_links)
