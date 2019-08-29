@@ -38,6 +38,7 @@ typedef struct		s_way
 {
 	int 			room1;
 	int 			room2;
+	int				shortest;
 }					t_way;
 
 typedef struct		s_path
@@ -133,8 +134,9 @@ void	ft_solution(t_map *nest);
 /*
  * ways.c
  */
-int ft_count_ways(t_map *nest);
-void ft_malloc_and_fill__ways(t_map *nest);
-int ft_find_index_ways(t_map *nest, int first, int second);
+int		ft_count_ways(t_map *nest);
+void	ft_malloc_and_fill__ways(t_map *nest);
+int		ft_find_index_ways(t_map *nest, int first, int second);
+void	ft_write_ways(t_map *nest);
 
 #endif

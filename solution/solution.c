@@ -11,38 +11,15 @@ int	ft_found_start(t_map *nest)
 	return (0);
 }
 
-
-int ft_room_less_weght(t_map *nest, int current)
-{
-	int i;
-	int less;
-	int index;
-	int cur_weght;
-
-	index = 0;
-	less = 214792993;
-	i = -1;
-	while (++i < nest->rooms[current].num_of_links)
-	{
-		cur_weght =  nest->rooms[nest->rooms[current].links[i]].weght;
-		if (!nest->rooms[current].visited && cur_weght < less
-		&& (cur_weght != 0 /*|| nest->rooms[current].start*/))
-		{
-			less = cur_weght;
-			index = i;
-		}
-	}
-	return (index);
-}
-
-void ft_check_next_rooms(t_map *nest, int current)
+int	ft_found_end(t_map *nest)
 {
 	int i;
 
 	i = -1;
-	while (++i < nest->rooms[current].num_of_links)
-		nest->rooms[(nest->rooms[current].links[i])].weght++;
-	nest->rooms[current].visited = 1;
+	while (++i < nest->num_of_rooms)
+		if (nest->rooms[i].end)
+			return (i);
+	return (0);
 }
 
 void	ft_find_shortest(t_map *nest, int start, int prev)
@@ -70,23 +47,43 @@ void	ft_find_shortest(t_map *nest, int start, int prev)
 	rooms[prev].visited = 0;
 }
 
+void ft_write_ways(t_map *nest)
+{
+	int	end;
+	int i;
+	int cur;
+	int j;
+	int prev;
+
+	i = -1;
+	end = ft_found_end(nest);
+	cur = end;
+	while (++i <= nest->rooms[end].weght)
+	{
+		j = -1;
+		while (++j < nest->rooms[cur].num_of_links)
+		{
+			prev = nest->rooms[cur].links[j];
+			if (nest->rooms[cur].weght - 1 == nest->rooms[prev].weght)
+			{
+				nest->ways[ft_find_index_ways(nest, cur, nest->rooms[cur].links[j])].shortest = 1;
+				cur = nest->rooms[cur].links[j];
+			}
+		}
+
+	}
+}
+
 void	ft_solution(t_map *nest)
 {
-	// need to find start
-	int		current;
+	int		start;
 	int		less_follow;
 	int 	i;
 
 	i = -1;
-	current = ft_found_start(nest);
-	ft_find_shortest(nest, current, -1);
-//	while (++i < nest->num_of_rooms)
-//	{ // идем по каждой комнате начиная со старта
-//		less_follow = ft_room_less_weght(nest, current); // текущий элемент (наименьший по весу)
-//		ft_check_next_rooms(nest, less_follow);
-//		current = less_follow;
-//	}
-	//name connect map->rooms[map->rooms[i].links[j]].name
+	start = ft_found_start(nest);
+	ft_find_shortest(nest, start, -1);
+	ft_write_ways(nest);
 }
 
 void main_solution(t_map *nest)

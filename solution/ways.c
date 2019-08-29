@@ -19,7 +19,7 @@ int ft_find_index_ways(t_map *nest, int first, int second)
 				return (index_ways);
 		}
 	}
-	return (-1); // if not found
+	return (-1);
 }
 
 void ft_fill_ways(t_map *nest)
@@ -40,8 +40,6 @@ void ft_fill_ways(t_map *nest)
 			{
 				nest->ways[index_ways].room1 = index_room;
 				nest->ways[index_ways].room2 = nest->rooms[index_room].links[index_link];
-				//printf("%s-%s\n", nest->rooms[nest->ways[index_ways].room1].name, nest->rooms[nest->ways[index_ways].room2].name);
-				//printf("%d-%d\n\n", nest->ways[index_ways].room1, nest->ways[index_ways].room2);
 			}
 		}
 	}
@@ -73,6 +71,4 @@ void ft_malloc_and_fill__ways(t_map *nest)
 	if(!(nest->ways = (t_way *)ft_memalloc(sizeof(t_way) * nest->num_of_ways)))
 		exit(1);
 	ft_fill_ways(nest);
-	//printf("\n\n%d\n\n", ft_find_index_ways(nest, 0, 1));
-	// еще в него надо выделить память в линкс и как-то туда записывать значения
 }
