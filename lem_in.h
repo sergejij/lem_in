@@ -57,9 +57,6 @@ typedef struct		s_map
 	t_path			*paths;
 }					t_map;
 
-
-
-
 /*
  *  make_map.c
  */

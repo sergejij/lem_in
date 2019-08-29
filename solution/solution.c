@@ -70,8 +70,39 @@ void ft_write_ways(t_map *nest)
 				cur = nest->rooms[cur].links[j];
 			}
 		}
-
 	}
+}
+
+void	ft_write_shortest(t_map *nest)
+{
+	int		cur;
+	int 	i;
+	int 	j;
+	int		end;
+
+	i = -1;
+	end = ft_found_end(nest);
+	cur = ft_found_start(nest);
+	/*while (++i <= nest->rooms[end].weght)
+	{*/
+		j = -1;
+		while (++j < nest->rooms[cur].num_of_links)
+		{
+			if (nest->rooms[cur].weght < nest->rooms[nest->rooms[cur].links[j]].weght
+			&& nest->ways[ft_find_index_ways(nest, cur, nest->rooms[cur].links[j])].shortest/* && nest->rooms[i].links[j] > i*/)
+			{
+				//printf("***%s --- %s***\n", nest->rooms[cur].name, nest->rooms[nest->rooms[cur].links[j]].name);
+				ft_putstr(nest->rooms[cur].name);
+				ft_putstr(" --- ");
+				ft_putstr(nest->rooms[nest->rooms[cur].links[j]].name);
+				ft_putchar('\n');
+				cur = nest->rooms[cur].links[j];
+				j = -1;
+				if (cur == end)
+					return;
+			}
+		}
+	/*}*/
 }
 
 void	ft_solution(t_map *nest)
@@ -84,11 +115,12 @@ void	ft_solution(t_map *nest)
 	start = ft_found_start(nest);
 	ft_find_shortest(nest, start, -1);
 	ft_write_ways(nest);
+	ft_write_shortest(nest);
 }
 
 void main_solution(t_map *nest)
 {
 	ft_malloc_and_fill__ways(nest);
 	ft_solution(nest);
-	show_map(nest);
+	//show_map(nest);
 }
