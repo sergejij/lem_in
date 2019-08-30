@@ -13,23 +13,50 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw_line.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/free.o" beforeDir="false" afterPath="$PROJECT_DIR$/free.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard.o" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/make_links.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/positions.o" beforeDir="false" afterPath="$PROJECT_DIR$/positions.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution.o" beforeDir="false" afterPath="$PROJECT_DIR$/solution.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.o" beforeDir="false" afterPath="$PROJECT_DIR$/validation.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/check_parts.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/check_parts.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/define.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/define.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/find.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/find.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/free.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/make_links.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/make_links.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/make_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/make_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/read_and_save.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/read_and_save.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/validation.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/validation.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/draw.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/draw_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/draw_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/keyboard.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/keyboard.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/positions.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/positions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/vizualizer_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer_main.o" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer_main.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +70,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
   </component>
   <component name="ProjectId" id="1Q67MDPMFTGPUZt437VBDgd0zYu" />
   <component name="PropertiesComponent">
@@ -103,6 +126,10 @@
       <workItem from="1566984426519" duration="9404000" />
       <workItem from="1567060896161" duration="3935000" />
       <workItem from="1567079143508" duration="3944000" />
+      <workItem from="1567088550162" duration="74000" />
+      <workItem from="1567156428015" duration="2318000" />
+      <workItem from="1567163963390" duration="194000" />
+      <workItem from="1567164382917" duration="3829000" />
     </task>
     <servers />
   </component>
@@ -123,7 +150,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -134,8 +163,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>76</line>
+          <line>108</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/solution.c</url>
+          <line>30</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include "../lem_in.h"
 
 int		check_duplicates_links(char **split, int i)
 {
@@ -33,22 +33,6 @@ int		check_duplicates_links(char **split, int i)
 		}
 		ft_free_split(split_link1, 2);
 		ft_free_split(split_link2, 2);
-	}
-	return (1);
-}
-
-int 	check_links(char **split)
-{
-	int 	i;
-
-	i = -1;
-	while (split[++i])
-	{
-		if (is_link(split[i]))
-		{
-			if (!(check_duplicates_links(split, i)))
-				return (0);
-		}
 	}
 	return (1);
 }

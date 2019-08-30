@@ -50,35 +50,24 @@ static void		plot(int x, int y, t_img *win, int color)
 		return ;
 	mas = (int *)win->data;
 	mas[x + y * win->size_line / 4] = color;
-////	if (mas[x - 1 + (y) * win->size_line / 4] == 0)
-//		mas[x - 1 + (y) * win->size_line / 4] = color2;
-////	if (mas[x + 1 + (y) * win->size_line / 4] == 0)
-//		mas[x + 1 + (y) * win->size_line / 4] = color2;
 }
 
 void		draw_room(t_room *room, t_mlx *mlx)
 {
 	t_pos	pos;
 	int 	j;
-	int 	color;
 
-	if (room->start)
-		color = set_colors(0, 255, 255, 0);
-	else if (room->end)
-		color = set_colors(0, 0, 255, 0);
-	else
-		color = set_colors(0, 255, 0, 0);
 	set_pos(&pos, mlx, room);
 	while (pos.x >= pos.y)
 	{
-		plot(pos.x0 + pos.x, pos.y0 + pos.y, mlx->img, color);
-		plot(pos.x0 + pos.y, pos.y0 + pos.x, mlx->img, color);
-		plot(pos.x0 - pos.y, pos.y0 + pos.x, mlx->img, color);
-		plot(pos.x0 - pos.x, pos.y0 + pos.y, mlx->img, color);
-		plot(pos.x0 - pos.x, pos.y0 - pos.y, mlx->img, color);
-		plot(pos.x0 - pos.y, pos.y0 - pos.x, mlx->img, color);
-		plot(pos.x0 + pos.y, pos.y0 - pos.x, mlx->img, color);
-		plot(pos.x0 + pos.x, pos.y0 - pos.y, mlx->img, color);
+		plot(pos.x0 - pos.y, pos.y0 + pos.x, mlx->img, room->color);
+		plot(pos.x0 + pos.y, pos.y0 + pos.x, mlx->img, room->color);
+		plot(pos.x0 - pos.x, pos.y0 + pos.y, mlx->img, room->color);
+		plot(pos.x0 + pos.x, pos.y0 + pos.y, mlx->img, room->color);
+		plot(pos.x0 - pos.y, pos.y0 - pos.x, mlx->img, room->color);
+		plot(pos.x0 + pos.y, pos.y0 - pos.x, mlx->img, room->color);
+		plot(pos.x0 - pos.x, pos.y0 - pos.y, mlx->img, room->color);
+		plot(pos.x0 + pos.x, pos.y0 - pos.y, mlx->img, room->color);
 		if (pos.err <= 0)
 			pos.err += 2 * ++pos.y + 1;
 		if (pos.err > 0)
@@ -86,10 +75,7 @@ void		draw_room(t_room *room, t_mlx *mlx)
 	}
 	j = -1;
 	while (++j < room->num_of_links)
-	{
-		if (!mlx->map->rooms[room->links[j]].visited)
-			draw_line(mlx, room, &mlx->map->rooms[room->links[j]]);
-	}
+		draw_line(mlx, room, &mlx->map->rooms[room->links[j]]);
 }
 
 void		draw(t_mlx *mlx)
@@ -100,12 +86,18 @@ void		draw(t_mlx *mlx)
 	int 	j;
 
 	i = -1;
-	bzero(mlx->img->data, WIDTH * HEIGHT);
+	bzero(mlx->img->data, WIDTH * HEIGHT * 4);
 	num = mlx->map->num_of_rooms;
 	cur = mlx->map->rooms;
 	while (++i < num)
 	{
 		j = -1;
+		if (cur[i].start)
+			cur[i].color = set_colors(0, 0, 255, 0);
+		else if (cur[i].end)
+			cur[i].color = set_colors(0, 255, 255, 0);
+		else
+			cur[i].color = set_colors(0, 255, 0, 0);
 		draw_room(&cur[i], mlx);
 		cur[i].visited = 1;
 	}
