@@ -22,7 +22,21 @@ int	ft_found_end(t_map *nest)
 	return (0);
 }
 
-void	ft_find_shortest(t_map *nest, int start, int prev)
+void 	ft_initialis_weight(t_map *nest)
+{
+	int i;
+
+	i = -1;
+	while (++i < nest->num_of_rooms)
+	{
+		if (nest->rooms[i].start)
+			continue;
+		else if (!nest->rooms[i].forbbiden)
+			nest->rooms[i].weght = 2147483640;
+	}
+}
+
+/*void	ft_find_shortest(t_map *nest, int start, int prev)
 {
 	int 	cur;
 	t_room	*rooms;
@@ -46,7 +60,7 @@ void	ft_find_shortest(t_map *nest, int start, int prev)
 	}
 	if (prev >= 0)
 		rooms[prev].visited = 0;
-}
+}*/
 
 /*void	ft_find_shortest(t_map *nest, int start, int prev)
 {
@@ -77,7 +91,80 @@ void	ft_find_shortest(t_map *nest, int start, int prev)
 		if (prev >= 0)
 			rooms[prev].visited = 0;
 	}
-}*/
+}
+*/
+
+int		ft_room_less_weght(t_map *nest)
+{
+	int i;
+	int cur_weght;
+	int less;
+	int index;
+
+	index = -1;
+	less = 2147483645;
+	i = -1;
+	while (++i < nest->num_of_rooms)
+	{
+		cur_weght =  nest->rooms[i].weght;
+		if (!nest->rooms[i].forbbiden && cur_weght < less)
+		{
+			less = cur_weght;
+			index= i;
+		}
+	}
+	return (index);
+}
+
+
+void ft_check_next_rooms(t_map *nest, int current, int less_next)
+{
+	int i;
+	int tmp;
+
+	i = -1;
+	while (++i < nest->rooms[less_next].num_of_links)
+	{
+		tmp = nest->rooms[current].weght + 1;
+		if (tmp < nest->rooms[(nest->rooms[current].links[i])].weght)
+			nest->rooms[(nest->rooms[current].links[i])].weght = tmp;
+	}
+	//nest->rooms[less_next].visited = 1;
+	nest->rooms[current].forbbiden = 1;
+}
+
+void	ft_find_shortest(t_map *nest, int start)
+{
+	int cur;
+	int cur2;
+	int i;
+	int less_next;
+
+	i = -1;
+	cur = ft_found_start(nest);
+	nest->rooms[cur].visited = 1;
+	cur2 = cur;
+	ft_initialis_weight(nest);
+	while (++i < nest->num_of_rooms)
+	{
+		if ((less_next = ft_room_less_weght(nest)) == -1)
+			exit (1);
+		ft_check_next_rooms(nest, cur, less_next);
+		//nest->rooms[i].forbbiden = 1;
+	}
+	/*while (++j < nest->num_of_rooms)
+	{
+		while (++i < nest->rooms[cur].num_of_links)
+		{
+			nest->rooms[nest->rooms[cur].links[i]].weght += 1;
+			if (i == nest->rooms[cur2].num_of_links)
+				cur2 = cur;
+		}
+		while (!nest->rooms[++i].end) {
+
+		}
+	}*/
+}
 
 void ft_write_ways(t_map *nest)
 {
@@ -142,7 +229,7 @@ void	ft_solution(t_map *nest)
 
 	i = -1;
 	start = ft_found_start(nest);
-	ft_find_shortest(nest, start, -1);
+	ft_find_shortest(nest, start);
 	ft_write_ways(nest);
 	ft_write_shortest(nest);
 }
@@ -151,5 +238,5 @@ void main_solution(t_map *nest)
 {
 	ft_malloc_and_fill__ways(nest);
 	ft_solution(nest);
-	//show_map(nest);
+	show_map(nest);
 }

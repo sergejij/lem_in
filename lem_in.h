@@ -30,6 +30,7 @@ typedef struct		s_room
 	int 			num_of_links;
 	int 			*links;
 	int				visited;
+	int 			forbbiden;
 	int				index_prev;
 	int				weght;
 	int 			color;
@@ -122,9 +123,6 @@ int 		make_links(t_room *rooms, char **split, int num);
  * solution.c
  */
 
-
-void ft_check_next_rooms(t_map *nest, int current);
-int ft_room_less_weght(t_map *nest, int current);
 void main_solution(t_map *nest);
 void	ft_solution(t_map *nest);
 

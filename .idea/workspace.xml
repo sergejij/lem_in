@@ -13,10 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
@@ -26,37 +22,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw_line.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw_line.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/free.o" beforeDir="false" afterPath="$PROJECT_DIR$/free.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboard.o" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/make_links.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map" beforeDir="false" afterPath="$PROJECT_DIR$/map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/positions.o" beforeDir="false" afterPath="$PROJECT_DIR$/positions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution.o" beforeDir="false" afterPath="$PROJECT_DIR$/solution.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map1" beforeDir="false" afterPath="$PROJECT_DIR$/map1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation.o" beforeDir="false" afterPath="$PROJECT_DIR$/validation.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/check_parts.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/check_parts.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/define.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/define.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/find.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/find.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/free.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/free.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/make_links.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/make_links.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/make_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/make_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/read_and_save.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/read_and_save.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validation/validation.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/validation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/draw.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/draw_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/draw_line.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/keyboard.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/keyboard.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/positions.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/positions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz/vizualizer_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vizualizer_main.o" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer_main.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,6 +99,9 @@
       <workItem from="1567156428015" duration="2318000" />
       <workItem from="1567163963390" duration="194000" />
       <workItem from="1567164382917" duration="3829000" />
+      <workItem from="1567233505406" duration="1949000" />
+      <workItem from="1567239862949" duration="1987000" />
+      <workItem from="1567245764854" duration="4467000" />
     </task>
     <servers />
   </component>
@@ -163,13 +135,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>108</line>
-          <option name="timeStamp" value="18" />
+          <line>64</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>30</line>
-          <option name="timeStamp" value="19" />
+          <line>230</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/solution.c</url>
+          <line>125</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -180,62 +157,7 @@
         <watch expression="nest-&gt;ways[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[2]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[3]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[4]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>nest-&gt;ways[4]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[6]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[5]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[3]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[2]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[1]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;ways[0]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ways[0]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>rooms[rooms[cur].links[i]].name</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>nest-&gt;rooms[start].name</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>
