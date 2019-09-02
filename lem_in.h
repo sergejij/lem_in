@@ -27,10 +27,12 @@ typedef struct		s_room
 	int 			y;
 	int 			start;
 	int 			end;
+	int 			index_end;
 	int 			num_of_links;
 	int 			*links;
 	int				visited;
 	int 			forbbiden;
+	int 			open;
 	int				index_prev;
 	int				weght;
 	int 			color;
@@ -133,6 +135,6 @@ void	ft_solution(t_map *nest);
 int		ft_count_ways(t_map *nest);
 void	ft_malloc_and_fill__ways(t_map *nest);
 int		ft_find_index_ways(t_map *nest, int first, int second);
-void	ft_write_ways(t_map *nest);
+void ft_write_ways(t_map *nest,	int j,	int i);
 
 #endif

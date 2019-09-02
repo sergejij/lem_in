@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
@@ -22,10 +23,21 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/free.o" beforeDir="false" afterPath="$PROJECT_DIR$/free.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/make_links.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map1" beforeDir="false" afterPath="$PROJECT_DIR$/map1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map2" beforeDir="false" afterPath="$PROJECT_DIR$/map2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.o" beforeDir="false" afterPath="$PROJECT_DIR$/solution.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/free.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/free.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ways.o" beforeDir="false" afterPath="$PROJECT_DIR$/ways.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +113,10 @@
       <workItem from="1567164382917" duration="3829000" />
       <workItem from="1567233505406" duration="1949000" />
       <workItem from="1567239862949" duration="1987000" />
-      <workItem from="1567245764854" duration="4467000" />
+      <workItem from="1567245764854" duration="4617000" />
+      <workItem from="1567405142890" duration="542000" />
+      <workItem from="1567410638994" duration="489000" />
+      <workItem from="1567411269973" duration="9938000" />
     </task>
     <servers />
   </component>
@@ -135,18 +150,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>64</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>230</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>125</line>
-          <option name="timeStamp" value="25" />
+          <line>207</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -157,6 +162,9 @@
         <watch expression="nest-&gt;ways[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[2]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[3]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
