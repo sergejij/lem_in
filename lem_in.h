@@ -12,7 +12,7 @@
 
 #ifndef LEM_IN_LEM_IN_H
 # define LEM_IN_LEM_IN_H
-# include "../Lem/libft/libft.h"
+# include "libft/libft.h"
 
 #include <stdio.h>
 
@@ -105,6 +105,7 @@ int		find_links(char **split);
 int		find_rooms(char **split);
 int		find_ants(char **split);
 int 	find_index_by_name(t_room *rooms, int num, char *name);
+int		find_start(t_map *nest);
 
 /*
  * check_parts.c
@@ -130,6 +131,7 @@ void ft_check_next_rooms(t_map *nest, int current);
 int ft_room_less_weght(t_map *nest, int current);
 void main_solution(t_map *nest);
 void	ft_solution(t_map *nest);
+int	ft_found_start(t_map *nest);
 
 
 /*

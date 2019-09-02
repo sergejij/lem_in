@@ -72,7 +72,6 @@ void	ft_find_shortest(t_map *nest, int start, int prev)
 
 void	ft_solution(t_map *nest)
 {
-	// need to find start
 	int		current;
 	int		less_follow;
 	int 	i;
@@ -80,13 +79,6 @@ void	ft_solution(t_map *nest)
 	i = -1;
 	current = ft_found_start(nest);
 	ft_find_shortest(nest, current, -1);
-//	while (++i < nest->num_of_rooms)
-//	{ // идем по каждой комнате начиная со старта
-//		less_follow = ft_room_less_weght(nest, current); // текущий элемент (наименьший по весу)
-//		ft_check_next_rooms(nest, less_follow);
-//		current = less_follow;
-//	}
-	//name connect map->rooms[map->rooms[i].links[j]].name
 }
 
 void main_solution(t_map *nest)

@@ -80,6 +80,5 @@ t_map		*make_map(char *map)
 		free_map(&new_map);
 		return (0);
 	}
-	show_map(new_map);
 	return (new_map);
 }

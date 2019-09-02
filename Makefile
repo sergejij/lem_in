@@ -23,7 +23,7 @@ SRC_LEM = main.c
 
 OBJ_LEM = $(SRC_LEM:.c=.o)
 
-SRC_VIZ = vizualizer_main.c init.c draw.c positions.c wu.c bresenham.c draw_line.c keyboard.c
+SRC_VIZ = vizualizer_main.c init.c draw.c positions.c wu.c draw_line.c keyboard.c ant_image.c move.c
 
 OBJ_VIZ = $(SRC_VIZ:.c=.o)
 
