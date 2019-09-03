@@ -200,6 +200,45 @@ CMakeFiles/lem_debag.dir/solution/ways.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/solution/ways.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/ways.c -o CMakeFiles/lem_debag.dir/solution/ways.c.s
 
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.o: CMakeFiles/lem_debag.dir/flags.make
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.o: ../solution/auxiliary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_debag.dir/solution/auxiliary.c.o   -c /Users/ubartemi/Desktop/lem_in/solution/auxiliary.c
+
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_debag.dir/solution/auxiliary.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem_in/solution/auxiliary.c > CMakeFiles/lem_debag.dir/solution/auxiliary.c.i
+
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/solution/auxiliary.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/auxiliary.c -o CMakeFiles/lem_debag.dir/solution/auxiliary.c.s
+
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.o: CMakeFiles/lem_debag.dir/flags.make
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.o: ../solution/shortest_way.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_debag.dir/solution/shortest_way.c.o   -c /Users/ubartemi/Desktop/lem_in/solution/shortest_way.c
+
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_debag.dir/solution/shortest_way.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem_in/solution/shortest_way.c > CMakeFiles/lem_debag.dir/solution/shortest_way.c.i
+
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/solution/shortest_way.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/shortest_way.c -o CMakeFiles/lem_debag.dir/solution/shortest_way.c.s
+
+CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o: CMakeFiles/lem_debag.dir/flags.make
+CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o: ../solution/find_new_paths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o   -c /Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c
+
+CMakeFiles/lem_debag.dir/solution/find_new_paths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_debag.dir/solution/find_new_paths.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c > CMakeFiles/lem_debag.dir/solution/find_new_paths.c.i
+
+CMakeFiles/lem_debag.dir/solution/find_new_paths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_debag.dir/solution/find_new_paths.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c -o CMakeFiles/lem_debag.dir/solution/find_new_paths.c.s
+
 # Object files for target lem_debag
 lem_debag_OBJECTS = \
 "CMakeFiles/lem_debag.dir/main.c.o" \
@@ -212,7 +251,10 @@ lem_debag_OBJECTS = \
 "CMakeFiles/lem_debag.dir/validation/make_map.c.o" \
 "CMakeFiles/lem_debag.dir/validation/make_links.c.o" \
 "CMakeFiles/lem_debag.dir/solution/solution.c.o" \
-"CMakeFiles/lem_debag.dir/solution/ways.c.o"
+"CMakeFiles/lem_debag.dir/solution/ways.c.o" \
+"CMakeFiles/lem_debag.dir/solution/auxiliary.c.o" \
+"CMakeFiles/lem_debag.dir/solution/shortest_way.c.o" \
+"CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
 
 # External object files for target lem_debag
 lem_debag_EXTERNAL_OBJECTS =
@@ -228,10 +270,13 @@ lem_debag: CMakeFiles/lem_debag.dir/validation/make_map.c.o
 lem_debag: CMakeFiles/lem_debag.dir/validation/make_links.c.o
 lem_debag: CMakeFiles/lem_debag.dir/solution/solution.c.o
 lem_debag: CMakeFiles/lem_debag.dir/solution/ways.c.o
+lem_debag: CMakeFiles/lem_debag.dir/solution/auxiliary.c.o
+lem_debag: CMakeFiles/lem_debag.dir/solution/shortest_way.c.o
+lem_debag: CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o
 lem_debag: CMakeFiles/lem_debag.dir/build.make
 lem_debag: ../libft/libft.a
 lem_debag: CMakeFiles/lem_debag.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable lem_debag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking C executable lem_debag"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_debag.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

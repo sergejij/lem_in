@@ -150,6 +150,87 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/main.c.s
 .PHONY : main.c.s
 
+solution/auxiliary.o: solution/auxiliary.c.o
+
+.PHONY : solution/auxiliary.o
+
+# target to build an object file
+solution/auxiliary.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/auxiliary.c.o
+.PHONY : solution/auxiliary.c.o
+
+solution/auxiliary.i: solution/auxiliary.c.i
+
+.PHONY : solution/auxiliary.i
+
+# target to preprocess a source file
+solution/auxiliary.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/auxiliary.c.i
+.PHONY : solution/auxiliary.c.i
+
+solution/auxiliary.s: solution/auxiliary.c.s
+
+.PHONY : solution/auxiliary.s
+
+# target to generate assembly for a file
+solution/auxiliary.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/auxiliary.c.s
+.PHONY : solution/auxiliary.c.s
+
+solution/find_new_paths.o: solution/find_new_paths.c.o
+
+.PHONY : solution/find_new_paths.o
+
+# target to build an object file
+solution/find_new_paths.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o
+.PHONY : solution/find_new_paths.c.o
+
+solution/find_new_paths.i: solution/find_new_paths.c.i
+
+.PHONY : solution/find_new_paths.i
+
+# target to preprocess a source file
+solution/find_new_paths.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/find_new_paths.c.i
+.PHONY : solution/find_new_paths.c.i
+
+solution/find_new_paths.s: solution/find_new_paths.c.s
+
+.PHONY : solution/find_new_paths.s
+
+# target to generate assembly for a file
+solution/find_new_paths.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/find_new_paths.c.s
+.PHONY : solution/find_new_paths.c.s
+
+solution/shortest_way.o: solution/shortest_way.c.o
+
+.PHONY : solution/shortest_way.o
+
+# target to build an object file
+solution/shortest_way.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/shortest_way.c.o
+.PHONY : solution/shortest_way.c.o
+
+solution/shortest_way.i: solution/shortest_way.c.i
+
+.PHONY : solution/shortest_way.i
+
+# target to preprocess a source file
+solution/shortest_way.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/shortest_way.c.i
+.PHONY : solution/shortest_way.c.i
+
+solution/shortest_way.s: solution/shortest_way.c.s
+
+.PHONY : solution/shortest_way.s
+
+# target to generate assembly for a file
+solution/shortest_way.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/shortest_way.c.s
+.PHONY : solution/shortest_way.c.s
+
 solution/solution.o: solution/solution.c.o
 
 .PHONY : solution/solution.o
@@ -432,6 +513,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... solution/auxiliary.o"
+	@echo "... solution/auxiliary.i"
+	@echo "... solution/auxiliary.s"
+	@echo "... solution/find_new_paths.o"
+	@echo "... solution/find_new_paths.i"
+	@echo "... solution/find_new_paths.s"
+	@echo "... solution/shortest_way.o"
+	@echo "... solution/shortest_way.i"
+	@echo "... solution/shortest_way.s"
 	@echo "... solution/solution.o"
 	@echo "... solution/solution.i"
 	@echo "... solution/solution.s"

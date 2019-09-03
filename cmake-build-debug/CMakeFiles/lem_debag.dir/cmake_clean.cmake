@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_debag.dir/validation/make_links.c.o"
   "CMakeFiles/lem_debag.dir/solution/solution.c.o"
   "CMakeFiles/lem_debag.dir/solution/ways.c.o"
+  "CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
+  "CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
+  "CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
   "lem_debag.pdb"
   "lem_debag"
 )

@@ -1,7 +1,7 @@
 #include "lem_in.h"
 
 
-int ft_find_index_ways(t_map *nest, int first, int second)
+int		ft_find_index_ways(t_map *nest, int first, int second)
 {
 	int index_ways;
 
@@ -22,7 +22,7 @@ int ft_find_index_ways(t_map *nest, int first, int second)
 	return (-1);
 }
 
-void ft_fill_ways(t_map *nest)
+void 	ft_fill_ways(t_map *nest)
 {
 	int index_room;
 	int index_link;
@@ -45,7 +45,7 @@ void ft_fill_ways(t_map *nest)
 	}
 }
 
-int ft_count_ways(t_map *nest)
+int 	ft_count_ways(t_map *nest)
 {
 	int index;
 	int res;
@@ -65,7 +65,7 @@ int ft_count_ways(t_map *nest)
 	return (res);
 }
 
-void ft_malloc_and_fill__ways(t_map *nest)
+void 	ft_malloc_and_fill_ways(t_map *nest)
 {
 	nest->num_of_ways = ft_count_ways(nest);
 	if(!(nest->ways = (t_way *)ft_memalloc(sizeof(t_way) * nest->num_of_ways)))

@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/ubartemi/Desktop/lem_in/main.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o"
+  "/Users/ubartemi/Desktop/lem_in/solution/auxiliary.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
+  "/Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
+  "/Users/ubartemi/Desktop/lem_in/solution/shortest_way.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/solution.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/ways.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o"
   "/Users/ubartemi/Desktop/lem_in/validation/check_parts.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/check_parts.c.o"

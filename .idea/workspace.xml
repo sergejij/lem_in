@@ -12,17 +12,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/solution/auxiliary.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solution/shortest_way.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ant_image.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_parts.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/define.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_line.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/find.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/free.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_abs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_fast_bin_pow.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_fast_bit_pow.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_gcd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_get_next_line.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_is_prime.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstadd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstdelone.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstiter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_lstnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memalloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putendl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_sqrt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strclr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_striter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_striteri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strsplit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strstr_kmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_zfunc.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_links.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_map.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/move.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/positions.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_and_save.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution/ways.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/ways.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer_main.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ways.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wu.o" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +211,7 @@
       <workItem from="1567405142890" duration="542000" />
       <workItem from="1567410638994" duration="489000" />
       <workItem from="1567411269973" duration="10056000" />
-      <workItem from="1567488972303" duration="2951000" />
+      <workItem from="1567488972303" duration="10548000" />
     </task>
     <servers />
   </component>
@@ -127,13 +236,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>110</line>
-          <option name="timeStamp" value="11" />
+          <line>5</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>158</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/solution/shortest_way.c</url>
+          <line>69</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -144,13 +253,28 @@
         <watch expression="nest-&gt;ways[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[2]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[3]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[4]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[4]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[5]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[6]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[7]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[8]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[9]" language="ObjectiveC" />
+        <watch expression="nest-&gt;ways[10]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[18]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9].links[0]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9].links[1]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9].links[2]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9].links[3]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[18]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[19]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9].links[4]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[9]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
+        <watch expression="nest-&gt;index_end" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[nest-&gt;index_end].weght" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

@@ -5,6 +5,14 @@ CMakeFiles/lem_debag.dir/main.c.o: ../lem_in.h
 CMakeFiles/lem_debag.dir/main.c.o: ../libft/libft.h
 CMakeFiles/lem_debag.dir/main.c.o: ../main.c
 
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.o: .././lem_in.h
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.o: .././libft/libft.h
+CMakeFiles/lem_debag.dir/solution/auxiliary.c.o: ../solution/auxiliary.c
+
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.o: .././lem_in.h
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.o: .././libft/libft.h
+CMakeFiles/lem_debag.dir/solution/shortest_way.c.o: ../solution/shortest_way.c
+
 CMakeFiles/lem_debag.dir/solution/solution.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/solution/solution.c.o: .././libft/libft.h
 CMakeFiles/lem_debag.dir/solution/solution.c.o: ../solution/solution.c

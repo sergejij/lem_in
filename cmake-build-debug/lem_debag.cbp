@@ -85,6 +85,15 @@
 		<Unit filename="/Users/ubartemi/Desktop/lem_in/main.c">
 			<Option target="lem_debag"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/auxiliary.c">
+			<Option target="lem_debag"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c">
+			<Option target="lem_debag"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/shortest_way.c">
+			<Option target="lem_debag"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/solution.c">
 			<Option target="lem_debag"/>
 		</Unit>
