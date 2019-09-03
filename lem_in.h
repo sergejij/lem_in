@@ -27,7 +27,6 @@ typedef struct		s_room
 	int 			y;
 	int 			start;
 	int 			end;
-	int 			index_end;
 	int 			num_of_links;
 	int 			*links;
 	int				visited;
@@ -56,6 +55,7 @@ typedef struct		s_map
 	int 			ants;
 	int 			num_of_rooms;
 	int 			num_of_ways;
+	int 			index_end;
 	t_room			*rooms;
 	t_way			*ways;
 	t_path			*paths;
