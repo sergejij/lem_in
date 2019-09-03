@@ -48,7 +48,7 @@ void		set_links(t_room *rooms, char **split, int num)
 	i = -1;
 	while (split[++i])
 	{
-		if (is_link(split[i]))
+		if (is_link(split[i]) && check_duplicates_links(split, i))
 		{
 			split_link = ft_strsplit(split[i], '-');
 			link_rooms(rooms, split_link, num);

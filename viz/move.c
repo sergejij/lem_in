@@ -19,8 +19,8 @@ void		set_dx_dy(t_mlx *mlx, int ant, int room)
 	if (room >= 0)
 	{
 		set_pos(&pos, mlx, &mlx->map->rooms[room]);
-		mlx->ants[ant].dx = (pos.x0 - mlx->ants[ant].x) / 50;
-		mlx->ants[ant].dy = (pos.y0 - mlx->ants[ant].y) / 50;
+		mlx->ants[ant].dx = (pos.x0 - mlx->ants[ant].x) / 100;
+		mlx->ants[ant].dy = (pos.y0 - mlx->ants[ant].y) / 100;
 	}
 	else
 	{
@@ -98,7 +98,7 @@ int		make_step(t_mlx *mlx)
 	int		i;
 
 	i = -1;
-	if (mlx->step == 50 || mlx->turn == 0)
+	if (mlx->step == 100 || mlx->turn == 0)
 	{
 		if (!mlx->turns[mlx->turn])
 			return (0);
@@ -107,7 +107,7 @@ int		make_step(t_mlx *mlx)
 		++mlx->turn;
 		mlx->step = 0;
 	}
-	else if (mlx->step < 50)
+	else if (mlx->step < 100)
 	{
 		do_step(mlx);
 		put_ants(mlx);
