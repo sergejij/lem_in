@@ -13,31 +13,28 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw.o" beforeDir="false" afterPath="$PROJECT_DIR$/draw.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/free.o" beforeDir="false" afterPath="$PROJECT_DIR$/free.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bresenham.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/find.o" beforeDir="false" afterPath="$PROJECT_DIR$/find.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init.o" beforeDir="false" afterPath="$PROJECT_DIR$/init.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard.o" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_links.o" beforeDir="false" afterPath="$PROJECT_DIR$/make_links.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map1" beforeDir="false" afterPath="$PROJECT_DIR$/map1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map2" beforeDir="false" afterPath="$PROJECT_DIR$/map2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/positions.o" beforeDir="false" afterPath="$PROJECT_DIR$/positions.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution.o" beforeDir="false" afterPath="$PROJECT_DIR$/solution.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/find.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/find.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validation/free.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/free.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/make_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/make_map.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/bresenham.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/keyboard.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/keyboard.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/positions.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/positions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/vizualizer.h" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz/vizualizer_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer_main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ways.o" beforeDir="false" afterPath="$PROJECT_DIR$/ways.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vizualizer_main.o" beforeDir="false" afterPath="$PROJECT_DIR$/vizualizer_main.o" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +113,8 @@
       <workItem from="1567245764854" duration="4617000" />
       <workItem from="1567405142890" duration="542000" />
       <workItem from="1567410638994" duration="489000" />
-      <workItem from="1567411269973" duration="9938000" />
+      <workItem from="1567411269973" duration="10056000" />
+      <workItem from="1567488972303" duration="635000" />
     </task>
     <servers />
   </component>

@@ -50,6 +50,8 @@ void			show_map(t_map *map)
 			printf("End\n");
 		j = -1;
 		printf("%d - weight\n", map->rooms[i].weght);
+//		while (++j < map->rooms[i].num_of_links && map->rooms[i].links)
+//			printf("%s\n", map->rooms[map->rooms[i].links[j]].name);
 	}
 	printf("----------------\n");
 }
