@@ -63,7 +63,6 @@ void	ft_find_shortest(t_map *nest, int cur)
 	int less_next;
 
 	i = -1;
-	nest->rooms[cur].visited = 1;
 	ft_initialization_weight(nest);
 	while (++i < nest->num_of_rooms)
 	{
@@ -93,6 +92,8 @@ void	ft_record_ways(t_map *nest,	int j,	int i)
 			prev = nest->rooms[cur].links[j];
 			if (nest->rooms[cur].weght - 1 == nest->rooms[prev].weght)
 			{
+				nest->rooms[cur].forb_new_way = 1;
+				nest->rooms[nest->rooms[cur].links[j]].forb_new_way = 1;
 				nest->ways[ft_find_index_ways(nest, cur,
 						nest->rooms[cur].links[j])].shortest = 1;
 				cur = nest->rooms[cur].links[j];

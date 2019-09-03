@@ -31,6 +31,7 @@ typedef struct		s_room
 	int 			*links;
 	int				visited;
 	int 			forbbiden;
+	int 			forb_new_way;
 	int 			open;
 	int				index_prev;
 	int				weght;
@@ -58,6 +59,7 @@ typedef struct		s_map
 	int 			num_of_ways;
 	int 			index_end;
 	int 			index_start;
+	int 			*forbidden_rooms;
 	t_room			*rooms;
 	t_way			*ways;
 	t_path			*paths;

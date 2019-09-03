@@ -10,12 +10,12 @@ void	ft_solution(t_map *nest)
 		&& nest->rooms[nest->index_end].num_of_links > 1)
 		ft_find_new_paths(nest);
 	else
-		ft_use_shortest();*/
+		ft_use_shortest(); // make full solution */
 }
 
 void	main_solution(t_map *nest)
 {
-	show_map(nest);
+	//show_map(nest);
 	ft_malloc_and_fill_ways(nest);
 	ft_solution(nest);
 	//show_map(nest);
