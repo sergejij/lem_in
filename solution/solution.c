@@ -3,9 +3,9 @@
 void	ft_solution(t_map *nest)
 {
 	nest->index_start = ft_found_start(nest);
-	ft_find_shortest(nest, nest->index_start);
-	ft_record_ways(nest, -1, -1);
-//	ft_write_shortest(nest);
+	ft_find_shortest(nest, -1); // тут не должна вернуть -1, так как еще нет forb_new_way
+	ft_record_ways(nest, -1, -1, nest->index_end);
+	ft_write_shortest(nest);
 	/*if (nest->rooms[nest->index_start].num_of_links > 1
 		&& nest->rooms[nest->index_end].num_of_links > 1)
 		ft_find_new_paths(nest);

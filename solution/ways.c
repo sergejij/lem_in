@@ -1,5 +1,29 @@
 #include "lem_in.h"
 
+void	ft_record_ways(t_map *nest,	int j,	int i, int end)
+{
+	int cur;
+	int prev;
+
+	cur = end;
+	while (++i <= nest->rooms[end].weght)
+	{
+		j = -1;
+		while (++j < nest->rooms[cur].num_of_links)
+		{
+			prev = nest->rooms[cur].links[j];
+			if (nest->rooms[cur].weght - 1 == nest->rooms[prev].weght)
+			{
+				nest->rooms[cur].forb_new_way = 1; // первая вершина вайза
+				nest->rooms[nest->rooms[cur].links[j]].forb_new_way = 1; // вторая
+				nest->ways[ft_find_index_ways(nest, cur,
+											  nest->rooms[cur].links[j])].shortest = 1;
+				cur = nest->rooms[cur].links[j];
+				j = -1;
+			}
+		}
+	}
+}
 
 int		ft_find_index_ways(t_map *nest, int first, int second)
 {

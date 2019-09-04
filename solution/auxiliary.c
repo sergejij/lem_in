@@ -14,11 +14,9 @@ int		ft_found_start(t_map *nest)
 void	ft_write_shortest(t_map *nest)
 {
 	int		cur;
-	int 	i;
 	int 	j;
 	int		end;
 
-	i = -1;
 	end = nest->index_end;
 	cur = nest->index_start;
 	j = -1;

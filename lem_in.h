@@ -109,6 +109,7 @@ int		find_links(char **split);
 int		find_rooms(char **split);
 int		find_ants(char **split);
 int 	find_index_by_name(t_room *rooms, int num, char *name);
+int		find_start(t_map *nest);
 
 /*
  * check_parts.c
@@ -140,16 +141,17 @@ void	ft_solution(t_map *nest);
 int		ft_count_ways(t_map *nest);
 void	ft_malloc_and_fill_ways(t_map *nest);
 int		ft_find_index_ways(t_map *nest, int first, int second);
+void	ft_record_ways(t_map *nest,	int j,	int i, int end);
 
 /*
  * auxiliary.c
  */
 
 void 	ft_initialization_weight(t_map *nest);
-int		ft_room_less_weight(t_map *nest);
-void	ft_check_next_rooms(t_map *nest, int current);
-void	ft_find_shortest(t_map *nest, int cur);
-void	ft_record_ways(t_map *nest,	int j,	int i);
+int		ft_room_less_weight(t_map *nest, int index, int i);
+int		ft_check_next_rooms(t_map *nest, int current);
+int		ft_find_shortest(t_map *nest, int i);
+
 /*
  * auxiliary.c
  */
