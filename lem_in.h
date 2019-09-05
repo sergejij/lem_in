@@ -44,6 +44,7 @@ typedef struct		s_way
 	int 			room2;
 	int				shortest;
 	int				forbbiden;
+	int				invisible;
 }					t_way;
 
 typedef struct		s_path
