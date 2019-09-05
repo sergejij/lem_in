@@ -29,7 +29,7 @@ int ft_find_intersections(t_map *nest, int index_forb, int i, int j)
 	return (-1);
 }
 
-void ft_delete_ways(t_map *nest, int end, int start, int i)
+void ft_delete_ways(t_map *nest, int start, int end, int i)
 {
 	// 1. иду по связи старта, по форбиден
 	// 2. отмечаю эту трубку как невидимую (или прям удалять?)
@@ -76,13 +76,13 @@ void 	ft_line_breaker(t_map *nest, int index_forb)
 			{
 				index_intersections = nest->rooms[index_forb].links[i];
 				if (nest->rooms[index_forb].num_of_links > 2)
-					ft_delete_ways(nest, index_forb, index_intersections, -1);
+					ft_delete_ways(nest, index_intersections, index_forb, -1);
 			}
 		 }
 		 return ;
 	}
 	// иначе у меня есть пересечение и мне нужно удалить от пересечения до индекс_форб
-	ft_delete_ways(nest, index_forb, index_intersections, -1);
+	ft_delete_ways(nest, index_intersections, index_forb, -1);
 }
 
 void	ft_find_new_paths(t_map *nest)

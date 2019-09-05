@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/find_new_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
@@ -104,7 +104,7 @@
       <workItem from="1567525123662" duration="1684000" />
       <workItem from="1567599260484" duration="49000" />
       <workItem from="1567599312058" duration="129000" />
-      <workItem from="1567666625362" duration="5949000" />
+      <workItem from="1567666625362" duration="6866000" />
     </task>
     <servers />
   </component>
