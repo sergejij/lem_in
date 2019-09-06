@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././lem_in.h
+libft/libft.h
+.././libft/libft.h
+stdio.h
+-
+
+.././libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/Users/ubartemi/Desktop/lem_in_me/solution/shortest_way.c
+lem_in.h
+/Users/ubartemi/Desktop/lem_in_me/solution/lem_in.h
+
+/Users/ubartemi/Desktop/lem_in_me/solution/ways.c
+lem_in.h
+/Users/ubartemi/Desktop/lem_in_me/solution/lem_in.h
+

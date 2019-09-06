@@ -85,7 +85,7 @@ void 	ft_line_breaker(t_map *nest, int index_forb)
 	ft_delete_ways(nest, index_intersections, index_forb, -1);
 }
 
-void	ft_find_new_paths(t_map *nest)
+void	ft_find_new_paths(t_map *nest, int count_path) // если количество путей 1, надо искать 2 и тд
 {
 	int index_forb;
 	/*int i;
@@ -96,11 +96,25 @@ void	ft_find_new_paths(t_map *nest)
 		if (nest->ways[i].shortest)
 			nest->ways[i].forbbiden;
 	} попробую без доп флага, там еще невидимый будет*/
-	if ((index_forb = ft_find_shortest(nest, nest->index_start)) != -1) // но надо тут менять, чтобы не искал forbbiden
+	int i;
+
+	i = -1;
+	while (++i < nest->num_of_rooms)
 	{
+		if (nest->rooms[i].forbbiden)
+			nest->rooms[i].forbbiden = 0;
+	}
+	if ((index_forb = ft_find_shortest(nest, -1)) != -2) // но надо тут менять, чтобы не искал forbbiden
+	{
+		// вернул не -2 значит путь не найден, а найдена вершина пересечения с запрещенной линией
 		//index_forb - вершина пересечения нового пути и запрещенного пути
 		// пускаю в бой ft_line_breaker();
 		ft_line_breaker(nest, index_forb);
+
+		// оберезал теперь запускаем еще раз
+		ft_find_new_paths(nest, count_path);
 	}
+	ft_find_new_paths(nest, count_path + 1); //  так как нашел путь мы увеличиваем, пока хз как это использовать
+	// но надо каждый раз искать на 1 путь больше чем в предыдущий
 	// и возвращаял индекс вершины в которой есть пересечение с шортест/форбиден
 }

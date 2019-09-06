@@ -44,7 +44,7 @@ int	ft_check_next_rooms(t_map *nest, int current)
 	while (++i < nest->rooms[current].num_of_links)
 	{
 		if (nest->rooms[nest->rooms[current].links[i]].forb_new_way)
-			return (nest->rooms[current].links[i]);
+			return (nest->rooms[current].links[i]); // тут выходит при поиске второго пути
 		if (nest->rooms[nest->rooms[current].links[i]].forbbiden)
 			continue ;
 		tmp = nest->rooms[current].weght + 1;
@@ -67,7 +67,7 @@ int	ft_find_shortest(t_map *nest, int i)
 		if (nest->rooms[i].end)
 			nest->index_end = i;
 		if ((less_next = ft_room_less_weight(nest, -1, -1)) == -1)
-			exit (-1);
+			exit (-2);
 		if ((index_forb = ft_check_next_rooms(nest, less_next)) != -1)
 			return (index_forb);
 	}

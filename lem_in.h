@@ -165,6 +165,6 @@ void	ft_write_shortest(t_map *nest);
  * find_new_paths.c
  */
 
-void ft_find_new_paths(t_map *nest);
+void	ft_find_new_paths(t_map *nest, int count_path);
 
 #endif
