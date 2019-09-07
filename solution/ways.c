@@ -6,6 +6,7 @@ void	ft_record_ways(t_map *nest,	int j,	int i, int end)
 	int prev;
 
 	cur = end;
+	//nest->sh_path = (int*)malloc(sizeof(int) * nest->num_of_rooms);
 	while (++i <= nest->rooms[end].weght)
 	{
 		j = -1;
@@ -16,6 +17,8 @@ void	ft_record_ways(t_map *nest,	int j,	int i, int end)
 			{
 				nest->rooms[cur].forb_new_way = 1; // первая вершина вайза
 				nest->rooms[nest->rooms[cur].links[j]].forb_new_way = 1; // вторая
+				/**(nest->sh_path)++ =  cur;
+				*(nest->sh_path)++ =  nest->rooms[cur].links[j];*/
 				nest->ways[ft_find_index_ways(nest, cur,
 											  nest->rooms[cur].links[j])].shortest = 1;
 				cur = nest->rooms[cur].links[j];

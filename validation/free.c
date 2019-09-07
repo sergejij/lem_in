@@ -33,6 +33,7 @@ void		free_rooms(t_room **rooms, int num)
 	*rooms = 0;
 }
 
+
 void			show_map(t_map *map)
 {
 	int 	i;
@@ -55,6 +56,7 @@ void			show_map(t_map *map)
 	}
 	printf("----------------\n");
 }
+
 
 void			free_map(t_map **map)
 {

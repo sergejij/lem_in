@@ -258,6 +258,33 @@ solution/solution.c.s:
 	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/solution.c.s
 .PHONY : solution/solution.c.s
 
+solution/use_shortest.o: solution/use_shortest.c.o
+
+.PHONY : solution/use_shortest.o
+
+# target to build an object file
+solution/use_shortest.c.o:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/use_shortest.c.o
+.PHONY : solution/use_shortest.c.o
+
+solution/use_shortest.i: solution/use_shortest.c.i
+
+.PHONY : solution/use_shortest.i
+
+# target to preprocess a source file
+solution/use_shortest.c.i:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/use_shortest.c.i
+.PHONY : solution/use_shortest.c.i
+
+solution/use_shortest.s: solution/use_shortest.c.s
+
+.PHONY : solution/use_shortest.s
+
+# target to generate assembly for a file
+solution/use_shortest.c.s:
+	$(MAKE) -f CMakeFiles/lem_debag.dir/build.make CMakeFiles/lem_debag.dir/solution/use_shortest.c.s
+.PHONY : solution/use_shortest.c.s
+
 solution/ways.o: solution/ways.c.o
 
 .PHONY : solution/ways.o
@@ -525,6 +552,9 @@ help:
 	@echo "... solution/solution.o"
 	@echo "... solution/solution.i"
 	@echo "... solution/solution.s"
+	@echo "... solution/use_shortest.o"
+	@echo "... solution/use_shortest.i"
+	@echo "... solution/use_shortest.s"
 	@echo "... solution/ways.o"
 	@echo "... solution/ways.i"
 	@echo "... solution/ways.s"

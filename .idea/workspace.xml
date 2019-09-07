@@ -12,17 +12,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/solution/use_shortest.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/auxiliary.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/auxiliary.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/shortest_way.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/shortest_way.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_debag.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_debag.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem_in.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h.gch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution/find_new_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution/shortest_way.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/shortest_way.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution/ways.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/ways.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/free.c" beforeDir="false" afterPath="$PROJECT_DIR$/validation/free.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/viz/vizualizer.h.gch" beforeDir="false" afterPath="$PROJECT_DIR$/viz/vizualizer.h.gch" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,6 +141,8 @@
       <workItem from="1567763009735" duration="563000" />
       <workItem from="1567766831548" duration="177000" />
       <workItem from="1567773129938" duration="1496000" />
+      <workItem from="1567787827370" duration="186000" />
+      <workItem from="1567840512036" duration="10712000" />
     </task>
     <servers />
   </component>
@@ -160,12 +189,19 @@
           <line>106</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/use_shortest.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="nest-&gt;rooms-&gt;x" />
         <watch expression="nest-&gt;ways[0]" language="ObjectiveC" />
+        <watch expression="arr[k]" language="ObjectiveC" />
+        <watch expression="arr[0]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[1]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[2]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[3]" language="ObjectiveC" />
@@ -191,6 +227,13 @@
         <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
         <watch expression="nest-&gt;index_end" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[nest-&gt;index_end].weght" language="ObjectiveC" />
+        <watch expression="sh_path[1]" language="ObjectiveC" />
+        <watch expression="arr[1]" language="ObjectiveC" />
+        <watch expression="arr[2]" language="ObjectiveC" />
+        <watch expression="arr[3]" language="ObjectiveC" />
+        <watch expression="arr[0]" language="ObjectiveC" />
+        <watch expression="arr[4]" language="ObjectiveC" />
+        <watch expression="arr[5]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

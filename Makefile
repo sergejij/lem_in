@@ -15,7 +15,8 @@ SRC_VAL = read_and_save.c validation.c find.c define.c check_parts.c \
 
 OBJ_VAL = $(SRC_VAL:.c=.o)
 
-SRC_SOL = solution.c ways.c auxiliary.c shortest_way.c find_new_paths.c
+SRC_SOL = solution.c ways.c auxiliary.c shortest_way.c find_new_paths.c \
+            use_shortest.c
 
 OBJ_SOL = $(SRC_SOL:.c=.o)
 

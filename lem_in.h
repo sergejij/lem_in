@@ -36,6 +36,7 @@ typedef struct		s_room
 	int				index_prev;
 	int				weght;
 	int 			color;
+	int				looked; //in use_shortest, fill arr index
 }					t_room;
 
 typedef struct		s_way
@@ -63,7 +64,7 @@ typedef struct		s_map
 	int 			*forbidden_rooms;
 	t_room			*rooms;
 	t_way			*ways;
-	t_path			*paths;
+	int				*sh_path;
 }					t_map;
 
 /*
@@ -167,4 +168,9 @@ void	ft_write_shortest(t_map *nest);
 
 void	ft_find_new_paths(t_map *nest, int count_path);
 
+/*
+ * use_shortest.c
+ */
+
+void	ft_use_shortest(t_map *nest);
 #endif

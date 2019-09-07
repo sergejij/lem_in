@@ -21,6 +21,10 @@ CMakeFiles/lem_debag.dir/solution/solution.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/solution/solution.c.o: .././libft/libft.h
 CMakeFiles/lem_debag.dir/solution/solution.c.o: ../solution/solution.c
 
+CMakeFiles/lem_debag.dir/solution/use_shortest.c.o: .././lem_in.h
+CMakeFiles/lem_debag.dir/solution/use_shortest.c.o: .././libft/libft.h
+CMakeFiles/lem_debag.dir/solution/use_shortest.c.o: ../solution/use_shortest.c
+
 CMakeFiles/lem_debag.dir/solution/ways.c.o: .././lem_in.h
 CMakeFiles/lem_debag.dir/solution/ways.c.o: .././libft/libft.h
 CMakeFiles/lem_debag.dir/solution/ways.c.o: ../solution/ways.c

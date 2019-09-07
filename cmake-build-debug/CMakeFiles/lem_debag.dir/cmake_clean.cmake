@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
   "CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
   "CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
+  "CMakeFiles/lem_debag.dir/solution/use_shortest.c.o"
   "lem_debag.pdb"
   "lem_debag"
 )

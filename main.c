@@ -28,7 +28,7 @@ int		main()
 		ft_putstr("Error\n");
 		return (0);
 	}
-	show_map(nest);
+	//show_map(nest);
 	main_solution(nest);
 	free_map(&nest);
 	return (0);

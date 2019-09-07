@@ -97,6 +97,9 @@
 		<Unit filename="/Users/ubartemi/Desktop/lem_in_me/solution/solution.c">
 			<Option target="lem_debag"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in_me/solution/use_shortest.c">
+			<Option target="lem_debag"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/lem_in_me/solution/ways.c">
 			<Option target="lem_debag"/>
 		</Unit>
