@@ -65,6 +65,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="842" />
+    <option name="y" value="72" />
+    <option name="width" value="1473" />
+    <option name="height" value="1235" />
+  </component>
   <component name="ProjectId" id="1Q67MDPMFTGPUZt437VBDgd0zYu" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />

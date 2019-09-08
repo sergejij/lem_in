@@ -29,7 +29,7 @@ int		main()
 		return (0);
 	}
 	//show_map(nest);
-	main_solution(nest);
+//	main_solution(nest);
 	free_map(&nest);
 	return (0);
 }

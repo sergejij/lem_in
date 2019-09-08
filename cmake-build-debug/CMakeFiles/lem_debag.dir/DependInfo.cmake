@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/ubartemi/Desktop/lem_in_me/main.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/auxiliary.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/find_new_paths.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/shortest_way.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/solution.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/use_shortest.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/use_shortest.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/solution/ways.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/check_parts.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/check_parts.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/define.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/define.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/find.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/free.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/make_links.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/make_map.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/read_and_save.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/read_and_save.c.o"
-  "/Users/ubartemi/Desktop/lem_in_me/validation/validation.c" "/Users/ubartemi/Desktop/lem_in_me/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o"
+  "/Users/lshellie/Desktop/lemin/main.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/main.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/auxiliary.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/auxiliary.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/find_new_paths.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/find_new_paths.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/shortest_way.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/shortest_way.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/solution.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/solution.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/use_shortest.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/use_shortest.c.o"
+  "/Users/lshellie/Desktop/lemin/solution/ways.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/solution/ways.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/check_parts.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/check_parts.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/define.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/define.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/find.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/find.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/free.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/free.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/make_links.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_links.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/make_map.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/make_map.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/read_and_save.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/read_and_save.c.o"
+  "/Users/lshellie/Desktop/lemin/validation/validation.c" "/Users/lshellie/Desktop/lemin/cmake-build-debug/CMakeFiles/lem_debag.dir/validation/validation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
