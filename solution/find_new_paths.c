@@ -1,4 +1,4 @@
-#include "lem_in.h"
+#include "../lem_in.h"
 
 int ft_find_intersections(t_map *nest, int index_forb, int i, int j)
 {

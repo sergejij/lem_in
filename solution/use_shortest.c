@@ -1,4 +1,4 @@
-#include "lem_in.h"
+#include "../lem_in.h"
 
 int *ft_make_arr_rooms(t_map *nest, int i, int j, int start)
 {

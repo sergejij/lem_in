@@ -38,20 +38,20 @@ VIZ = vizualizer
 all: $(LEM) $(VIZ)
 
 $(VIZ): $(OBJ_VIZ)
-	gcc -Wall -Wextra -Werror -L. $(LIB) -o $(VIZ) $(OBJ_VIZ) $(OBJ_VAL) -L mlx -l mlx -framework OpenGL -framework AppKit
+	gcc -Wall -Wextra -Werror $(LIB) -o $(VIZ) $(OBJ_VIZ) $(OBJ_VAL) -L mlx -l mlx -framework OpenGL -framework AppKit
 
 $(LEM): $(OBJ_LEM) $(OBJ_VAL) $(LIB) $(OBJ_SOL)
-	gcc -Wall -Wextra -Werror -L. $(LIB) -o $(LEM) $(OBJ_LEM) $(OBJ_VAL) $(OBJ_SOL)
+	gcc -Wall -Wextra -Werror $(LIB) -o $(LEM) $(OBJ_LEM) $(OBJ_VAL) $(OBJ_SOL)
 $(LIB):
 	make -C ./libft
 $(OBJ_VAL):
-	gcc -c -I. lem_in.h $(addprefix validation/, $(SRC_VAL))
+	gcc -c -I lem_in.h $(addprefix validation/, $(SRC_VAL))
 $(OBJ_LEM):
-	gcc -c -I. lem_in.h $(SRC_LEM)
+	gcc -c -I lem_in.h $(SRC_LEM)
 $(OBJ_SOL):
-	gcc -c -I. lem_in.h $(addprefix solution/, $(SRC_SOL))
+	gcc -c -I lem_in.h $(addprefix solution/, $(SRC_SOL))
 $(OBJ_VIZ):
-	gcc -c -I. viz/vizualizer.h $(addprefix viz/, $(SRC_VIZ))
+	gcc -c -I viz/vizualizer.h $(addprefix viz/, $(SRC_VIZ))
 clean:
 	make clean -C ./libft
 	rm -rf $(OBJ_LEM) $(OBJ_VIZ) $(OBJ_VAL) $(OBJ_SOL)
