@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Vanya/lem_in.h"
+#include "../lem_in.h"
 
 void		init_link_mas(t_map *map, int n1, int n2)
 {

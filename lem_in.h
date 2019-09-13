@@ -20,6 +20,12 @@
 # define ROOMS 1
 # define LINKS 2
 
+typedef struct		s_links
+{
+	char 			**first;
+	char 			**second;
+}					t_links;
+
 typedef struct		s_room
 {
 	char 			*name;
@@ -126,7 +132,8 @@ int 	check_part4(char **split);
  * make_links.c
  */
 
-int 		make_links(t_room *rooms, char **split, int num);
+int 		make_links(t_map *map, char **split);
+void		link_rooms(t_map *map, t_links *links);
 
 /*
  * solution.c

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Vanya/lem_in.h"
+#include "../lem_in.h"
 
 int		check_duplicates_links(char **split, int i)
 {

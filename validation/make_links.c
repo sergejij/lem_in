@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../Vanya/lem_in.h"
+#include "../lem_in.h"
 
 int 		count_num_of_links(t_map *map, t_links *links)
 {
