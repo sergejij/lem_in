@@ -70,6 +70,7 @@ typedef struct		s_map
 	int 			*forbidden_rooms;
 	t_room			*rooms;
 	t_way			*ways;
+	t_path			*paths;
 	int				*sh_path;
 }					t_map;
 
