@@ -2,6 +2,7 @@
 
 void	ft_solution(t_map *nest)
 {
+
 	nest->index_start = ft_found_start(nest);
 	ft_find_shortest(nest, -1); // тут не должна вернуть -1, так как еще нет forb_new_way
 	ft_record_ways(nest, -1, -1, nest->index_end);

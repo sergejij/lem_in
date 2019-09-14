@@ -2,7 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="lem_debag" targetName="lem_debag" />
+      <config projectName="lem_in" targetName="lem_in" />
+      <config projectName="lem_in" targetName="lem_debag" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -12,9 +13,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_debag.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/find_new_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +47,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -60,12 +83,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="lem_debag" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_debag" TARGET_NAME="lem_debag" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_debag" RUN_TARGET_NAME="lem_debag">
+  <component name="RunManager" selected="CMake Application.lem_in">
+    <configuration name="lem_debag" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/cmake-build-debug/lem_debag" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lem_in" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lem_in" TARGET_NAME="lem_in" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lem_in" RUN_TARGET_NAME="lem_in">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.lem_debag" />
+      <item itemvalue="CMake Application.lem_in" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -107,7 +139,9 @@
       <workItem from="1567787827370" duration="186000" />
       <workItem from="1567840512036" duration="10712000" />
       <workItem from="1567944108092" duration="211000" />
-      <workItem from="1568460114109" duration="1304000" />
+      <workItem from="1568460114109" duration="3296000" />
+      <workItem from="1568467867933" duration="9000" />
+      <workItem from="1568467913265" duration="1670000" />
     </task>
     <task id="LOCAL-00001" summary="done with validation">
       <created>1567944301141</created>
@@ -157,56 +191,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>5</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/use_shortest.c</url>
           <line>22</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/find_new_paths.c</url>
+          <line>134</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/solution.c</url>
+          <line>5</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="nest-&gt;rooms-&gt;x" />
-        <watch expression="nest-&gt;ways[0]" language="ObjectiveC" />
-        <watch expression="arr[k]" language="ObjectiveC" />
-        <watch expression="arr[0]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[1]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[2]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[3]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[4]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[4]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[5]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[6]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[7]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[8]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[9]" language="ObjectiveC" />
-        <watch expression="nest-&gt;ways[10]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[18]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9].links[0]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9].links[1]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9].links[2]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9].links[3]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[18]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9].links[4]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[9]" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
-        <watch expression="nest-&gt;index_end" language="ObjectiveC" />
-        <watch expression="nest-&gt;rooms[nest-&gt;index_end].weght" language="ObjectiveC" />
-        <watch expression="sh_path[1]" language="ObjectiveC" />
-        <watch expression="arr[1]" language="ObjectiveC" />
-        <watch expression="arr[2]" language="ObjectiveC" />
-        <watch expression="arr[3]" language="ObjectiveC" />
-        <watch expression="arr[0]" language="ObjectiveC" />
-        <watch expression="arr[4]" language="ObjectiveC" />
-        <watch expression="arr[5]" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
