@@ -47,6 +47,7 @@ void ft_delete_ways(t_map *nest, int start, int end, int i)
 		{
 			nest->rooms[start].invisib = 1;
 			nest->rooms[room[start].links[i]].invisib = 1;
+			nest->rooms[end].forb_new_way = 0;
 			index_way = ft_find_index_ways(nest, start, room[start].links[i]);
 			nest->ways[index_way].invisible = 1;
 			start = room[start].links[i];
@@ -80,6 +81,8 @@ void 	ft_line_breaker(t_map *nest, int index_forb)
 				if (nest->rooms[index_forb].num_of_links > 2)
 					ft_delete_ways(nest, index_intersections, index_forb, -1);
 			}
+			else
+				break;
 		}
 		return ;
 	}
@@ -87,12 +90,29 @@ void 	ft_line_breaker(t_map *nest, int index_forb)
 	ft_delete_ways(nest, index_intersections, index_forb, -1);
 }
 
-int 	ft_find_new_path(t_map *nest, int i,int start, int *count_path)
+void ft_clear_paice_of_path(t_map *nest, int point_inters, int start, int i)
 {
 	while (++i < nest->rooms[start].num_of_links)
 	{
 		if (nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1 &&
-				(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib))
+		(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib))
+		{
+			nest->ways[ft_find_index_ways(nest, start, nest->rooms[start].links[i])].shortest = 0; // удаляем трубку
+			start = nest->rooms[start].links[i];
+			i = -1;
+		}
+	}
+}
+
+int 	ft_find_new_path(t_map *nest, int i,int start, int *count_path)
+{
+	int tmp;
+
+	tmp = start;
+	while (++i < nest->rooms[start].num_of_links)
+	{
+		if ((nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1 || nest->rooms[nest->rooms[start].links[i]].invisib) &&
+				(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib)) // косяк с условием прыгает на way[2] - 1-4
 		{
 			nest->ways[ft_find_index_ways(nest, start, nest->rooms[start].links[i])].shortest = *count_path; // сохраняем трубку, но если встретим пересечение надо либо удалять либо потом начинать отсюда
 			start = nest->rooms[start].links[i];
@@ -104,6 +124,7 @@ int 	ft_find_new_path(t_map *nest, int i,int start, int *count_path)
 			// надо записывать сразу путь
 			// а если оказался тут надо его очистить
 		/*	nest*/
+			ft_clear_paice_of_path(nest, nest->rooms[start].links[i], tmp, -1);
 			return (nest->rooms[start].links[i]);
 		}
 		else if (nest->rooms[nest->rooms[start].links[i]].end)
@@ -115,21 +136,6 @@ int 	ft_find_new_path(t_map *nest, int i,int start, int *count_path)
 		}
 	}
 	return (-1);
-	/*while (++i < nest->num_of_rooms)
-	{
-		if (nest->rooms[i].forb_new_way)
-			continue;
-		while (++j < nest->rooms[i].num_of_links)
-		{
-			if (nest->rooms[i].weght <= nest->rooms[nest->rooms[i].links[j]].weght &&
-					nest->rooms[nest->rooms[i].links[j]].forb_new_way) // если вес текущей не меньше чем следующей и следующая шортест
-				return (nest->rooms[i].links[j]); // вернуть индекс следующей
-
-				// так не будет работать так как может найти комнату которая пересекается с шортест не первой
-				// наверное надо идти по весу, а может просто сделать поиск новыех путей по весу и отвемечать если пересечение
-
-		}
-	}*/
 }
 
 void	ft_find_new_paths(t_map *nest, int count_path) // если количество путей 1, надо искать 2 и тд
@@ -153,7 +159,7 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 	}*/
 	while ((index_forb = ft_find_new_path(nest, -1, nest->index_start, &count_path)) != -1) // но надо тут менять, чтобы не искал forbbiden
 	{
-		// вернул не -2 значит путь не найден, а найдена вершина пересечения с запрещенной линией
+		// вернул не -1 значит путь не найден, а найдена вершина пересечения с запрещенной линией
 		//index_forb - вершина пересечения нового пути и запрещенного пути
 		// пускаю в бой ft_line_breaker();
 		ft_line_breaker(nest, index_forb);

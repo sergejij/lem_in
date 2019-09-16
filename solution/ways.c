@@ -95,7 +95,7 @@ int 	ft_count_ways(t_map *nest)
 void 	ft_malloc_and_fill_ways(t_map *nest)
 {
 	nest->num_of_ways = ft_count_ways(nest);
-	if(!(nest->ways = (t_way *)ft_memalloc(sizeof(t_way) * nest->num_of_ways)))
+	if(!(nest->ways = ft_memalloc(sizeof(t_way) * nest->num_of_ways)))
 		exit(1);
 	ft_fill_ways(nest);
 }
