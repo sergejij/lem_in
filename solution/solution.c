@@ -19,5 +19,5 @@ void	main_solution(t_map *nest)
 	//show_map(nest);
 	ft_malloc_and_fill_ways(nest);
 	ft_solution(nest);
-	//show_map(nest);
+	show_map(nest);
 }

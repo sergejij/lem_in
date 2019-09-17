@@ -36,6 +36,7 @@ typedef struct		s_room
 	int 			num_of_links;
 	int 			*links;
 	int				visited;
+	int				sh;
 	int 			forbbiden;
 	int 			forb_new_way;
 	int 			open;
