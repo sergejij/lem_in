@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/solution/auxiliary.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/solution/auxiliary.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/solution/find_new_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/solution/find_new_paths.c.o" afterDir="false" />
@@ -28,12 +27,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/validation/make_map.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/validation/make_map.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/validation/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/validation/validation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lem_in.h" beforeDir="false" afterPath="$PROJECT_DIR$/lem_in.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/find_new_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vizualizer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution/shortest_way.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/shortest_way.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +136,8 @@
       <workItem from="1568467913265" duration="2204000" />
       <workItem from="1568626467830" duration="6382000" />
       <workItem from="1568639790196" duration="3329000" />
-      <workItem from="1568717902329" duration="4884000" />
+      <workItem from="1568717902329" duration="5172000" />
+      <workItem from="1568799799214" duration="3169000" />
     </task>
     <task id="LOCAL-00001" summary="done with validation">
       <created>1567944301141</created>
@@ -196,28 +192,13 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>5</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/solution/auxiliary.c</url>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/find_new_paths.c</url>
           <line>177</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/solution.c</url>
-          <line>19</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/ways.c</url>
-          <line>97</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/auxiliary.c</url>
-          <option name="timeStamp" value="39" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -233,6 +214,13 @@
         <watch expression="nest-&gt;ways[8]" language="ObjectiveC" />
         <watch expression="nest-&gt;ways[5]" language="ObjectiveC" />
         <watch expression="nest-&gt;rooms[0]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[1]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[2]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[3]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[4]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[5]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[6]" language="ObjectiveC" />
+        <watch expression="nest-&gt;rooms[7]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

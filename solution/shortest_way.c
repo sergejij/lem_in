@@ -23,7 +23,7 @@ int		ft_room_less_weight(t_map *nest, int index, int i)
 	while (++i < nest->num_of_rooms)
 	{
 		cur_weight =  nest->rooms[i].weght;
-		if (!nest->rooms[i].forbbiden && (nest->rooms[i].open ||
+		if (/*!nest->rooms[i].invisib && */!nest->rooms[i].forbbiden && (nest->rooms[i].open ||
 		nest->rooms[i].start) && cur_weight < less)
 		{
 			if (nest->rooms[i].start)
@@ -43,12 +43,13 @@ int	ft_check_next_rooms(t_map *nest, int current)
 	i = -1;
 	while (++i < nest->rooms[current].num_of_links)
 	{
-		if (nest->rooms[nest->rooms[current].links[i]].forb_new_way)
-			return (nest->rooms[current].links[i]); // тут выходит при поиске второго пути
+		/*if (nest->rooms[nest->rooms[current].links[i]].forb_new_way)
+			return (nest->rooms[current].links[i]); // тут выходит при поиске второго пути*/
 		if (nest->rooms[nest->rooms[current].links[i]].forbbiden)
 			continue ;
 		tmp = nest->rooms[current].weght + 1;
-		if (tmp < nest->rooms[(nest->rooms[current].links[i])].weght)
+		if (tmp < nest->rooms[nest->rooms[current].links[i]].weght &&
+		!nest->ways[ft_find_index_ways(nest, current, nest->rooms[current].links[i])].invisible)
 			nest->rooms[(nest->rooms[current].links[i])].weght = tmp;
 		nest->rooms[nest->rooms[current].links[i]].open = 1;
 	}
