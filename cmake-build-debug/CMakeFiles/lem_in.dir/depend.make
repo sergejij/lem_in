@@ -13,6 +13,14 @@ CMakeFiles/lem_in.dir/solution/find_new_paths.c.o: ../lem_in.h
 CMakeFiles/lem_in.dir/solution/find_new_paths.c.o: ../libft/libft.h
 CMakeFiles/lem_in.dir/solution/find_new_paths.c.o: ../solution/find_new_paths.c
 
+CMakeFiles/lem_in.dir/solution/line_breaker.c.o: ../lem_in.h
+CMakeFiles/lem_in.dir/solution/line_breaker.c.o: ../libft/libft.h
+CMakeFiles/lem_in.dir/solution/line_breaker.c.o: ../solution/line_breaker.c
+
+CMakeFiles/lem_in.dir/solution/sets.c.o: ../lem_in.h
+CMakeFiles/lem_in.dir/solution/sets.c.o: ../libft/libft.h
+CMakeFiles/lem_in.dir/solution/sets.c.o: ../solution/sets.c
+
 CMakeFiles/lem_in.dir/solution/shortest_way.c.o: ../lem_in.h
 CMakeFiles/lem_in.dir/solution/shortest_way.c.o: ../libft/libft.h
 CMakeFiles/lem_in.dir/solution/shortest_way.c.o: ../solution/shortest_way.c

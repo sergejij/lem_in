@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/solution/shortest_way.c.o"
   "CMakeFiles/lem_in.dir/solution/find_new_paths.c.o"
   "CMakeFiles/lem_in.dir/solution/use_shortest.c.o"
+  "CMakeFiles/lem_in.dir/solution/sets.c.o"
+  "CMakeFiles/lem_in.dir/solution/line_breaker.c.o"
   "lem_in.pdb"
   "lem_in"
 )

@@ -252,6 +252,32 @@ CMakeFiles/lem_in.dir/solution/use_shortest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/solution/use_shortest.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/use_shortest.c -o CMakeFiles/lem_in.dir/solution/use_shortest.c.s
 
+CMakeFiles/lem_in.dir/solution/sets.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/solution/sets.c.o: ../solution/sets.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/lem_in.dir/solution/sets.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/solution/sets.c.o   -c /Users/ubartemi/Desktop/lem_in/solution/sets.c
+
+CMakeFiles/lem_in.dir/solution/sets.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/solution/sets.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem_in/solution/sets.c > CMakeFiles/lem_in.dir/solution/sets.c.i
+
+CMakeFiles/lem_in.dir/solution/sets.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/solution/sets.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/sets.c -o CMakeFiles/lem_in.dir/solution/sets.c.s
+
+CMakeFiles/lem_in.dir/solution/line_breaker.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/solution/line_breaker.c.o: ../solution/line_breaker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/lem_in.dir/solution/line_breaker.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/solution/line_breaker.c.o   -c /Users/ubartemi/Desktop/lem_in/solution/line_breaker.c
+
+CMakeFiles/lem_in.dir/solution/line_breaker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/solution/line_breaker.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ubartemi/Desktop/lem_in/solution/line_breaker.c > CMakeFiles/lem_in.dir/solution/line_breaker.c.i
+
+CMakeFiles/lem_in.dir/solution/line_breaker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/solution/line_breaker.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ubartemi/Desktop/lem_in/solution/line_breaker.c -o CMakeFiles/lem_in.dir/solution/line_breaker.c.s
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/main.c.o" \
@@ -268,7 +294,9 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/solution/auxiliary.c.o" \
 "CMakeFiles/lem_in.dir/solution/shortest_way.c.o" \
 "CMakeFiles/lem_in.dir/solution/find_new_paths.c.o" \
-"CMakeFiles/lem_in.dir/solution/use_shortest.c.o"
+"CMakeFiles/lem_in.dir/solution/use_shortest.c.o" \
+"CMakeFiles/lem_in.dir/solution/sets.c.o" \
+"CMakeFiles/lem_in.dir/solution/line_breaker.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -288,10 +316,12 @@ lem_in: CMakeFiles/lem_in.dir/solution/auxiliary.c.o
 lem_in: CMakeFiles/lem_in.dir/solution/shortest_way.c.o
 lem_in: CMakeFiles/lem_in.dir/solution/find_new_paths.c.o
 lem_in: CMakeFiles/lem_in.dir/solution/use_shortest.c.o
+lem_in: CMakeFiles/lem_in.dir/solution/sets.c.o
+lem_in: CMakeFiles/lem_in.dir/solution/line_breaker.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: ../libft/libft.a
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ubartemi/Desktop/lem_in/main.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/main.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/auxiliary.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/auxiliary.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/find_new_paths.c.o"
+  "/Users/ubartemi/Desktop/lem_in/solution/line_breaker.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/line_breaker.c.o"
+  "/Users/ubartemi/Desktop/lem_in/solution/sets.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/sets.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/shortest_way.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/shortest_way.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/solution.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/solution.c.o"
   "/Users/ubartemi/Desktop/lem_in/solution/use_shortest.c" "/Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/solution/use_shortest.c.o"

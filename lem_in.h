@@ -62,6 +62,12 @@ typedef struct		s_path
 	int				len;
 }					t_path;
 
+typedef struct		s_set
+{
+	int 			**v;
+	int				len_path;
+}					t_set;
+
 typedef struct		s_map
 {
 	int 			ants;
@@ -73,6 +79,7 @@ typedef struct		s_map
 	t_room			*rooms;
 	t_way			*ways;
 	t_path			*paths;
+	t_set			*sets;
 	int				*sh_path;
 }					t_map;
 
@@ -183,4 +190,19 @@ void	ft_find_new_paths(t_map *nest, int count_path);
  */
 
 void	ft_use_shortest(t_map *nest);
+
+/*
+ * line_breaker.c
+ */
+
+int ft_find_intersections(t_map *nest, int index_forb, int i, int j);
+void ft_delete_ways(t_map *nest, int start, int end, int i);
+void 	ft_line_breaker(t_map *nest, int index_forb);
+
+/*
+ * sets.c
+ */
+void ft_record_sets(t_map *nest, int count_path, int i);
+int ft_pathlen(t_map *nest, int count_path, int i);
+
 #endif

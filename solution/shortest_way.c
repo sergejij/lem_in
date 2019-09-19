@@ -22,7 +22,7 @@ int		ft_room_less_weight(t_map *nest, int index, int i)
 	less = 2147483645;
 	while (++i < nest->num_of_rooms)
 	{
-		cur_weight =  nest->rooms[i].weght;
+		cur_weight = nest->rooms[i].weght;
 		if (/*!nest->rooms[i].invisib && */!nest->rooms[i].forbbiden && (nest->rooms[i].open ||
 		nest->rooms[i].start) && cur_weight < less)
 		{

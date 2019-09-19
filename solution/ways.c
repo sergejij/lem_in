@@ -17,6 +17,8 @@ void	ft_record_ways(t_map *nest,	int j,	int i, int end)
 			{
 				nest->rooms[cur].forb_new_way = 1; // первая вершина вайза
 				nest->rooms[nest->rooms[cur].links[j]].forb_new_way = 1; // вторая
+				nest->rooms[cur].sh = 1; // первая вершина вайза
+				nest->rooms[nest->rooms[cur].links[j]].sh = 1; // вторая
 				/**(nest->sh_path)++ =  cur;
 				*(nest->sh_path)++ =  nest->rooms[cur].links[j];*/
 				nest->ways[ft_find_index_ways(nest, cur,

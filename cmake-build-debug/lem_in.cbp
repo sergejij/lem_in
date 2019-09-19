@@ -91,6 +91,12 @@
 		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/find_new_paths.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/line_breaker.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/sets.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/ubartemi/Desktop/lem_in/solution/shortest_way.c">
 			<Option target="lem_in"/>
 		</Unit>

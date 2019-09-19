@@ -204,6 +204,60 @@ solution/find_new_paths.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/find_new_paths.c.s
 .PHONY : solution/find_new_paths.c.s
 
+solution/line_breaker.o: solution/line_breaker.c.o
+
+.PHONY : solution/line_breaker.o
+
+# target to build an object file
+solution/line_breaker.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/line_breaker.c.o
+.PHONY : solution/line_breaker.c.o
+
+solution/line_breaker.i: solution/line_breaker.c.i
+
+.PHONY : solution/line_breaker.i
+
+# target to preprocess a source file
+solution/line_breaker.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/line_breaker.c.i
+.PHONY : solution/line_breaker.c.i
+
+solution/line_breaker.s: solution/line_breaker.c.s
+
+.PHONY : solution/line_breaker.s
+
+# target to generate assembly for a file
+solution/line_breaker.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/line_breaker.c.s
+.PHONY : solution/line_breaker.c.s
+
+solution/sets.o: solution/sets.c.o
+
+.PHONY : solution/sets.o
+
+# target to build an object file
+solution/sets.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets.c.o
+.PHONY : solution/sets.c.o
+
+solution/sets.i: solution/sets.c.i
+
+.PHONY : solution/sets.i
+
+# target to preprocess a source file
+solution/sets.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets.c.i
+.PHONY : solution/sets.c.i
+
+solution/sets.s: solution/sets.c.s
+
+.PHONY : solution/sets.s
+
+# target to generate assembly for a file
+solution/sets.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets.c.s
+.PHONY : solution/sets.c.s
+
 solution/shortest_way.o: solution/shortest_way.c.o
 
 .PHONY : solution/shortest_way.o
@@ -546,6 +600,12 @@ help:
 	@echo "... solution/find_new_paths.o"
 	@echo "... solution/find_new_paths.i"
 	@echo "... solution/find_new_paths.s"
+	@echo "... solution/line_breaker.o"
+	@echo "... solution/line_breaker.i"
+	@echo "... solution/line_breaker.s"
+	@echo "... solution/sets.o"
+	@echo "... solution/sets.i"
+	@echo "... solution/sets.s"
 	@echo "... solution/shortest_way.o"
 	@echo "... solution/shortest_way.i"
 	@echo "... solution/shortest_way.s"
