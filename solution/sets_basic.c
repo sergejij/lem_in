@@ -43,6 +43,7 @@ t_sets		*new_set(t_map *nest, int cur)
 	new->len = count_sets_len(nest, cur) + 1;
 	if (!(new->set_rooms = ft_memalloc(sizeof(int) * new->len)))
 		return (0);
+	return (new);
 }
 
 void		put_set(t_lst *lst, t_sets *new)

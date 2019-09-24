@@ -96,6 +96,7 @@ typedef struct		s_map
  * set_basic.c
  */
 
+void		ft_show_sets(t_map *nest);
 void		set_new_set(t_lst **lst, t_lst *new);
 t_lst		*new_lst(void);
 void		free_lst(t_lst *lst);
@@ -227,5 +228,6 @@ void		ft_line_breaker(t_map *nest, int index_forb);
 void 		find_sets(t_map *nest);
 int			make_set(t_map *nest, t_lst *lst, int cur);
 int 		count_sets_len(t_map *nest, int cur);
+
 
 #endif

@@ -60,6 +60,7 @@ void ft_remove_weight(t_map *nest, int i)
 	while (++i <= nest->num_of_rooms)
 	{
 		nest->rooms[i].weght = 0;
+		nest->rooms[i].sh = 0;
 		nest->rooms[i].forb_new_way = 0;
 		nest->rooms[i].forbbiden = 0;
 	}
@@ -97,12 +98,10 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 	nest->sets[count_path].v = (int**)malloc(sizeof(int*) * count_path);
 	ft_record_sets(nest, count_path - 1, -1);*/
 
-
-
-
-
 	while ((index_forb = ft_find_new_path(nest, -1, nest->index_start, &count_path)) != -1) // но надо тут менять, чтобы не искал forbbiden
 	{
+		find_sets(nest);
+		ft_show_sets(nest);
 		// вернул не -1 значит путь не найден, а найдена вершина пересечения с запрещенной линией
 		//index_forb - вершина пересечения нового пути и запрещенного пути
 		// пускаю в бой ft_line_breaker();
@@ -121,9 +120,14 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 		 *
 		 *
 		 */
-	if (nest->rooms[nest->index_start].num_of_links > count_path
-		&& nest->rooms[nest->index_end].num_of_links > count_path)
+	if (nest->rooms[nest->index_start].num_of_links >= count_path
+		&& nest->rooms[nest->index_end].num_of_links >= count_path)
 		ft_find_new_paths(nest, count_path + 1); //  так как нашел путь мы увеличиваем, пока хз как это использовать
-	// но надо каждый раз искать на 1 путь больше чем в предыдущий
+	else
+	{
+		find_sets(nest);
+		ft_show_sets(nest);
+	}
+		// но надо каждый раз искать на 1 путь больше чем в предыдущий
 	// и возвращаял индекс вершины в которой есть пересечение с шортест/форбиден
 }
