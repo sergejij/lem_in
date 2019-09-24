@@ -20,6 +20,21 @@
 # define ROOMS 1
 # define LINKS 2
 
+typedef struct		s_sets
+{
+	int 			*set_rooms;
+	int 			len;
+	int 			turns;
+	struct s_sets	*next;
+}					t_sets;
+
+typedef struct		s_lst
+{
+	int 			sum;
+	t_sets			*sets;
+	struct s_lst	*next;
+}					t_lst;
+
 typedef struct		s_links
 {
 	char 			**first;
@@ -62,12 +77,6 @@ typedef struct		s_path
 	int				len;
 }					t_path;
 
-typedef struct		s_set
-{
-	int 			**v;
-	int				len_path;
-}					t_set;
-
 typedef struct		s_map
 {
 	int 			ants;
@@ -79,9 +88,19 @@ typedef struct		s_map
 	t_room			*rooms;
 	t_way			*ways;
 	t_path			*paths;
-	t_set			*sets;
+	t_lst			*sets;
 	int				*sh_path;
 }					t_map;
+
+/*
+ * set_basic.c
+ */
+
+void		set_new_set(t_lst **lst, t_lst *new);
+t_lst		*new_lst(void);
+void		free_lst(t_lst *lst);
+t_sets		*new_set(t_map *nest, int cur);
+void		put_set(t_lst *lst, t_sets *new);
 
 /*
  *  make_map.c
@@ -100,12 +119,14 @@ void		show_map(t_map *map);
 /*
  * read_and_save.c
  */
+
 char 			*read_and_save(void);
 char			*ft_free_split(char **split, int num);
 
 /*
  * validation.c
  */
+
 int		check_duplicates_links(char **split, int i);
 int		validation(char *map);
 int 	check_duplicates(t_room *rooms, int num);
@@ -114,6 +135,7 @@ int 	check_links(char **split);
 /*
  * define.c
  */
+
 int		is_number(char *line);
 int		is_room(char *line);
 int		is_ant(char *line);
@@ -178,31 +200,32 @@ int		ft_find_shortest(t_map *nest, int i);
 int		ft_found_start(t_map *nest);
 void	ft_write_shortest(t_map *nest);
 
-
 /*
  * find_new_paths.c
  */
 
-void	ft_find_new_paths(t_map *nest, int count_path);
+void		ft_find_new_paths(t_map *nest, int count_path);
 
 /*
  * use_shortest.c
  */
 
-void	ft_use_shortest(t_map *nest);
+void		ft_use_shortest(t_map *nest);
 
 /*
  * line_breaker.c
  */
 
-int ft_find_intersections(t_map *nest, int index_forb, int i, int j);
-void ft_delete_ways(t_map *nest, int start, int end, int i);
-void 	ft_line_breaker(t_map *nest, int index_forb);
+int			ft_find_intersections(t_map *nest, int index_forb, int i, int j);
+void		ft_delete_ways(t_map *nest, int start, int end, int i);
+void		ft_line_breaker(t_map *nest, int index_forb);
 
 /*
  * sets.c
  */
-void ft_record_sets(t_map *nest, int count_path, int i);
-int ft_pathlen(t_map *nest, int count_path, int i);
+
+void 		find_sets(t_map *nest);
+int			make_set(t_map *nest, t_lst *lst, int cur);
+int 		count_sets_len(t_map *nest, int cur);
 
 #endif

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/lem_in
+CMAKE_SOURCE_DIR = /Users/lshellie/Desktop/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lshellie/Desktop/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/lem_in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -257,6 +257,33 @@ solution/sets.s: solution/sets.c.s
 solution/sets.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets.c.s
 .PHONY : solution/sets.c.s
+
+solution/sets_basic.o: solution/sets_basic.c.o
+
+.PHONY : solution/sets_basic.o
+
+# target to build an object file
+solution/sets_basic.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets_basic.c.o
+.PHONY : solution/sets_basic.c.o
+
+solution/sets_basic.i: solution/sets_basic.c.i
+
+.PHONY : solution/sets_basic.i
+
+# target to preprocess a source file
+solution/sets_basic.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets_basic.c.i
+.PHONY : solution/sets_basic.c.i
+
+solution/sets_basic.s: solution/sets_basic.c.s
+
+.PHONY : solution/sets_basic.s
+
+# target to generate assembly for a file
+solution/sets_basic.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/sets_basic.c.s
+.PHONY : solution/sets_basic.c.s
 
 solution/shortest_way.o: solution/shortest_way.c.o
 
@@ -606,6 +633,9 @@ help:
 	@echo "... solution/sets.o"
 	@echo "... solution/sets.i"
 	@echo "... solution/sets.s"
+	@echo "... solution/sets_basic.o"
+	@echo "... solution/sets_basic.i"
+	@echo "... solution/sets_basic.s"
 	@echo "... solution/shortest_way.o"
 	@echo "... solution/shortest_way.i"
 	@echo "... solution/shortest_way.s"
