@@ -27,9 +27,10 @@ void		ft_show_sets(t_map *nest)
 			i = -1;
 			while (++i < cur_set->len)
 				printf("%d ", cur_set->set_rooms[i]);
+			printf(" ants = %d\n", cur_set->turns ? cur_set->turns - cur_set->len : 0);
 			cur_set = cur_set->next;
-			printf("\n");
 		}
+		printf(" sum - %d\n", cur_lst->sum);
 		printf("------\n");
 		cur_lst = cur_lst->next;
 	}
@@ -102,4 +103,5 @@ void 		find_sets(t_map *nest)
 			make_set(nest, new, nest->rooms[cur].links[i]);
 		}
 	}
+	calculate_turns(nest, new);
 }

@@ -119,8 +119,8 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 		 *
 		 *
 		 */
-	if (nest->rooms[nest->index_start].num_of_links >= count_path
-		&& nest->rooms[nest->index_end].num_of_links >= count_path)
+	if (nest->rooms[nest->index_start].num_of_links + 1 >= count_path
+		&& nest->rooms[nest->index_end].num_of_links + 1 >= count_path)
 		ft_find_new_paths(nest, count_path + 1); //  так как нашел путь мы увеличиваем, пока хз как это использовать
 	else
 	{

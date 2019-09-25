@@ -228,6 +228,7 @@ void		ft_line_breaker(t_map *nest, int index_forb);
 void 		find_sets(t_map *nest);
 int			make_set(t_map *nest, t_lst *lst, int cur);
 int 		count_sets_len(t_map *nest, int cur);
+int			calculate_turns(t_map *nest, t_lst *lst);
 
 
 #endif

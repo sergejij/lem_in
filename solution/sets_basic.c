@@ -49,24 +49,29 @@ t_sets		*new_set(t_map *nest, int cur)
 void		put_set(t_lst *lst, t_sets *new)
 {
 	t_sets		*cur;
-	t_sets		*tmp;
+	t_sets		*prev;
 
-	cur = lst->sets;
-	while (cur && cur->next)
+	prev = 0;
+	if (!lst->sets)
 	{
-		if (new->len < cur->next->len)
+		lst->sets = new;
+		return ;
+	}
+	cur = lst->sets;
+	while (cur)
+	{
+		if (new->len < cur->len)
 		{
-			tmp = cur->next;
-			cur->next = new;
-			new->next = tmp;
-			break ;
+			new->next = cur;
+			if (prev)
+				prev->next = new;
+			else
+				lst->sets = new;
+			return ;
 		}
+		prev = cur;
 		cur = cur->next;
 	}
-	if (!cur)
-		lst->sets = new;
-	else
-		cur->next = new;
 }
 
 t_lst		*new_lst(void)
