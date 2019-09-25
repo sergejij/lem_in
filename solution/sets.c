@@ -16,7 +16,7 @@ void		ft_show_sets(t_map *nest)
 {
 	t_lst		*cur_lst;
 	t_sets		*cur_set;
-	int 		i;
+	t_nodes		*cur_node;
 
 	cur_lst = nest->sets;
 	while (cur_lst)
@@ -24,45 +24,46 @@ void		ft_show_sets(t_map *nest)
 		cur_set = cur_lst->sets;
 		while (cur_set)
 		{
-			i = -1;
-			while (++i < cur_set->len)
-				printf("%d ", cur_set->set_rooms[i]);
-			printf(" ants = %d\n", cur_set->turns ? cur_set->turns - cur_set->len : 0);
+			cur_node = cur_set->nodes;
+			while (cur_node)
+			{
+				printf("%d ", cur_node->num);
+				cur_node = cur_node->next;
+			}
+			printf("\nlen - %d ants = %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0);
 			cur_set = cur_set->next;
 		}
-		printf(" sum - %d\n", cur_lst->sum);
+		printf("sum - %d\n", cur_lst->sum);
 		printf("------\n");
 		cur_lst = cur_lst->next;
 	}
 }
 
-int 		count_sets_len(t_map *nest, int cur)
+int 		set_node(t_sets *new, int cur)
 {
-	int 	i;
-	int 	len;
+	t_nodes		*cur_node;
 
-	len = 0;
-	i = -1;
-	while (++i < nest->rooms[cur].num_of_links)
+	if (!new->nodes)
 	{
-		if ((nest->rooms[nest->rooms[cur].links[i]].sh == nest->rooms[cur].sh &&
-				nest->rooms[nest->rooms[cur].links[i]].weght == nest->rooms[cur].weght + 1) || nest->rooms[nest->rooms[cur].links[i]].end)
-		{
-			cur = nest->rooms[cur].links[i];
-			i = -1;
-			++len;
-		}
+		new->nodes = ft_memalloc(sizeof(t_nodes));
+		new->nodes->num = cur;
 	}
-	return (len);
+	else
+	{
+		cur_node = new->nodes;
+		while (cur_node->next)
+			cur_node = cur_node->next;
+		cur_node->next = ft_memalloc(sizeof(t_nodes));
+		cur_node->next->num = cur;
+	}
+	return (1);
 }
 
 int			make_set(t_map *nest, t_lst *lst, int cur)
 {
 	int 	i;
-	int 	j;
 	t_sets	*new;
 
-	j = 0;
 	if (!(new = new_set(nest, cur)))
 		return (0);
 	i = -1;
@@ -72,8 +73,9 @@ int			make_set(t_map *nest, t_lst *lst, int cur)
 			 && nest->rooms[nest->rooms[cur].links[i]].weght == nest->rooms[cur].weght + 1)
 			 || nest->rooms[cur].links[i] == nest->index_end)
 		{
-			new->set_rooms[j++] = cur;
+			set_node(new, cur);
 			cur = nest->rooms[cur].links[i];
+			++new->len;
 			i = -1;
 		}
 	}

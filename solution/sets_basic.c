@@ -16,6 +16,7 @@ void		free_lst(t_lst *lst)
 {
 	t_sets		*cur;
 	t_lst		*lst_tmp;
+	t_nodes		*tmp_nodes;
 	t_sets		*tmp;
 
 	while (lst)
@@ -25,7 +26,12 @@ void		free_lst(t_lst *lst)
 		{
 			tmp = cur;
 			cur = cur->next;
-			free(tmp->set_rooms);
+			while (cur->nodes)
+			{
+				tmp_nodes = cur->nodes;
+				cur->nodes = cur->nodes->next;
+				free(tmp_nodes);
+			}
 			free(tmp);
 		}
 		lst_tmp = lst;
@@ -39,9 +45,6 @@ t_sets		*new_set(t_map *nest, int cur)
 	t_sets		*new;
 
 	if (!(new = ft_memalloc(sizeof(t_sets))))
-		return (0);
-	new->len = count_sets_len(nest, cur);
-	if (!(new->set_rooms = ft_memalloc(sizeof(int) * new->len)))
 		return (0);
 	return (new);
 }

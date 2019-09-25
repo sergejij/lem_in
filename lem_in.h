@@ -20,9 +20,16 @@
 # define ROOMS 1
 # define LINKS 2
 
+typedef struct		s_nodes
+{
+	int 			num;
+	int 			ant;
+	struct s_nodes	*next;
+}					t_nodes;
+
 typedef struct		s_sets
 {
-	int 			*set_rooms;
+	t_nodes			*nodes;
 	int 			len;
 	int 			turns;
 	struct s_sets	*next;
