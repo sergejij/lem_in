@@ -101,7 +101,6 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 	while ((index_forb = ft_find_new_path(nest, -1, nest->index_start, &count_path)) != -1) // но надо тут менять, чтобы не искал forbbiden
 	{
 		find_sets(nest);
-		ft_show_sets(nest);
 		// вернул не -1 значит путь не найден, а найдена вершина пересечения с запрещенной линией
 		//index_forb - вершина пересечения нового пути и запрещенного пути
 		// пускаю в бой ft_line_breaker();
@@ -126,7 +125,6 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 	else
 	{
 		find_sets(nest);
-		ft_show_sets(nest);
 	}
 		// но надо каждый раз искать на 1 путь больше чем в предыдущий
 	// и возвращаял индекс вершины в которой есть пересечение с шортест/форбиден

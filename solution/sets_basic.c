@@ -40,7 +40,7 @@ t_sets		*new_set(t_map *nest, int cur)
 
 	if (!(new = ft_memalloc(sizeof(t_sets))))
 		return (0);
-	new->len = count_sets_len(nest, cur) + 1;
+	new->len = count_sets_len(nest, cur);
 	if (!(new->set_rooms = ft_memalloc(sizeof(int) * new->len)))
 		return (0);
 	return (new);
