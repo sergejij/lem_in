@@ -26,10 +26,10 @@ void		free_lst(t_lst *lst)
 		{
 			tmp = cur;
 			cur = cur->next;
-			while (cur->nodes)
+			while (cur->nodes_start)
 			{
-				tmp_nodes = cur->nodes;
-				cur->nodes = cur->nodes->next;
+				tmp_nodes = cur->nodes_start;
+				cur->nodes_start = cur->nodes_start->next;
 				free(tmp_nodes);
 			}
 			free(tmp);

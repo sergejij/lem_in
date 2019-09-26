@@ -25,11 +25,13 @@ typedef struct		s_nodes
 	int 			num;
 	int 			ant;
 	struct s_nodes	*next;
+	struct s_nodes	*prev;
 }					t_nodes;
 
 typedef struct		s_sets
 {
-	t_nodes			*nodes;
+	t_nodes			*nodes_start;
+	t_nodes			*nodes_end;
 	int 			len;
 	int 			turns;
 	struct s_sets	*next;
@@ -38,6 +40,7 @@ typedef struct		s_sets
 typedef struct		s_lst
 {
 	int 			sum;
+	int 			num_of_sets;
 	t_sets			*sets;
 	struct s_lst	*next;
 }					t_lst;

@@ -24,7 +24,7 @@ void		ft_show_sets(t_map *nest)
 		cur_set = cur_lst->sets;
 		while (cur_set)
 		{
-			cur_node = cur_set->nodes;
+			cur_node = cur_set->nodes_start;
 			while (cur_node)
 			{
 				printf("%d ", cur_node->num);
@@ -43,17 +43,18 @@ int 		set_node(t_sets *new, int cur)
 {
 	t_nodes		*cur_node;
 
-	if (!new->nodes)
+	if (!new->nodes_start)
 	{
-		new->nodes = ft_memalloc(sizeof(t_nodes));
-		new->nodes->num = cur;
+		new->nodes_start = ft_memalloc(sizeof(t_nodes));
+		new->nodes_start->num = cur;
 	}
 	else
 	{
-		cur_node = new->nodes;
+		cur_node = new->nodes_start;
 		while (cur_node->next)
 			cur_node = cur_node->next;
 		cur_node->next = ft_memalloc(sizeof(t_nodes));
+		cur_node->next->prev = cur_node;
 		cur_node->next->num = cur;
 	}
 	return (1);
