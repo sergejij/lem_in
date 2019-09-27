@@ -22,6 +22,6 @@ void	main_solution(t_map *nest)
 	ft_malloc_and_fill_ways(nest);
 	ft_solution(nest);
 //	ft_show_sets(nest);
-	print_solution(nest->sets, nest);
+//	print_solution(nest->sets, nest);
 //	show_map(nest);
 }

@@ -58,7 +58,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 
 void ft_remove_weight(t_map *nest, int i)
 {
-	while (++i <= nest->num_of_rooms)
+	while (++i < nest->num_of_rooms)
 	{
 		nest->rooms[i].weght = 0;
 		nest->rooms[i].sh = 0;
