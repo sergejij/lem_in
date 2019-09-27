@@ -72,6 +72,7 @@ typedef struct		s_room
 	int				weght;
 	int 			color;
 	int 			invisib;
+	int 			deadlock;
 	int				looked; //in use_shortest, fill arr index
 }					t_room;
 

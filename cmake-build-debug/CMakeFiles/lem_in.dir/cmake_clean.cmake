@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/solution/sets.c.o"
   "CMakeFiles/lem_in.dir/solution/line_breaker.c.o"
   "CMakeFiles/lem_in.dir/solution/sets_basic.c.o"
+  "CMakeFiles/lem_in.dir/solution/delete_deadlocks.c.o"
   "lem_in.pdb"
   "lem_in"
 )

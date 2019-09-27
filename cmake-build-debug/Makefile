@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lshellie/Desktop/lem_in
+CMAKE_SOURCE_DIR = /Users/ubartemi/Desktop/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lshellie/Desktop/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ubartemi/Desktop/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/lshellie/Desktop/lem_in/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/lshellie/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/ubartemi/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lshellie/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ubartemi/Desktop/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ solution/auxiliary.s: solution/auxiliary.c.s
 solution/auxiliary.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/auxiliary.c.s
 .PHONY : solution/auxiliary.c.s
+
+solution/delete_deadlocks.o: solution/delete_deadlocks.c.o
+
+.PHONY : solution/delete_deadlocks.o
+
+# target to build an object file
+solution/delete_deadlocks.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/delete_deadlocks.c.o
+.PHONY : solution/delete_deadlocks.c.o
+
+solution/delete_deadlocks.i: solution/delete_deadlocks.c.i
+
+.PHONY : solution/delete_deadlocks.i
+
+# target to preprocess a source file
+solution/delete_deadlocks.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/delete_deadlocks.c.i
+.PHONY : solution/delete_deadlocks.c.i
+
+solution/delete_deadlocks.s: solution/delete_deadlocks.c.s
+
+.PHONY : solution/delete_deadlocks.s
+
+# target to generate assembly for a file
+solution/delete_deadlocks.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/solution/delete_deadlocks.c.s
+.PHONY : solution/delete_deadlocks.c.s
 
 solution/find_new_paths.o: solution/find_new_paths.c.o
 
@@ -624,6 +651,9 @@ help:
 	@echo "... solution/auxiliary.o"
 	@echo "... solution/auxiliary.i"
 	@echo "... solution/auxiliary.s"
+	@echo "... solution/delete_deadlocks.o"
+	@echo "... solution/delete_deadlocks.i"
+	@echo "... solution/delete_deadlocks.s"
 	@echo "... solution/find_new_paths.o"
 	@echo "... solution/find_new_paths.i"
 	@echo "... solution/find_new_paths.s"
