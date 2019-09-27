@@ -24,6 +24,7 @@ typedef struct		s_nodes
 {
 	int 			num;
 	int 			ant;
+	int 			visited;
 	struct s_nodes	*next;
 	struct s_nodes	*prev;
 }					t_nodes;
@@ -32,6 +33,7 @@ typedef struct		s_sets
 {
 	t_nodes			*nodes_start;
 	t_nodes			*nodes_end;
+	int 			num_of_ants;
 	int 			len;
 	int 			turns;
 	struct s_sets	*next;
@@ -39,6 +41,7 @@ typedef struct		s_sets
 
 typedef struct		s_lst
 {
+	int 			max_len;
 	int 			sum;
 	int 			num_of_sets;
 	t_sets			*sets;
@@ -100,6 +103,7 @@ typedef struct		s_map
 	t_path			*paths;
 	t_lst			*sets;
 	int				*sh_path;
+	char 			*str;
 }					t_map;
 
 /*
@@ -112,6 +116,7 @@ t_lst		*new_lst(void);
 void		free_lst(t_lst *lst);
 t_sets		*new_set(t_map *nest, int cur);
 void		put_set(t_lst *lst, t_sets *new);
+int 		print_solution(t_lst *lst, t_map *nest);
 
 /*
  *  make_map.c

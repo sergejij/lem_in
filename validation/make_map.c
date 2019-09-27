@@ -87,15 +87,17 @@ int 		count_rooms(char **split)
 	return (num);
 }
 
-void		get_name_x_y(t_room *room, char *line)
+int			get_name_x_y(t_room *room, char *line)
 {
 	char 	**split;
 
 	if (!(split = ft_strsplit(line, ' ')))
-		return ;
-	room->name = ft_strdup(split[0]);
+		return (0);
+	if (!(room->name = ft_strdup(split[0])))
+		return (0);
 	room->x = ft_atoi(split[1]);
 	room->y = ft_atoi(split[2]);
+	return (1);
 }
 
 t_room		*make_rooms(char **split, int num)
@@ -115,7 +117,8 @@ t_room		*make_rooms(char **split, int num)
 		if (ft_strequ(split[i], "##end"))
 			rooms[j].end = 1;
 		if (is_room(split[i]))
-			get_name_x_y(&rooms[j++], split[i]);
+			if (!get_name_x_y(&rooms[j++], split[i]))
+				return (0);
 	}
 	if (!(check_duplicates(rooms, num)))
 		free_rooms(&rooms, num);

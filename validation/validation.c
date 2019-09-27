@@ -88,6 +88,5 @@ int		validation(char *map)
 	if (!check_part1(split, mas) || !check_part2(split, mas) \
 	|| !check_part3(split, mas) || !check_part4(split))
 		return (0);
-//	printf("%d\n%d\n%d\n", ++mas[ANTS], ++mas[ROOMS], ++mas[LINKS]);
 	return (1);
 }

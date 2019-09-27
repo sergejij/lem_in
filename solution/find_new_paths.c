@@ -20,7 +20,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 {
 	int tmp;
 
-	tmp = start;
+	tmp = start; // здесь проблема
 	while (++i < nest->rooms[start].num_of_links)
 	{
 		if ((nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1 /*|| nest->rooms[nest->rooms[start].links[i]].invisib*/) &&
@@ -52,6 +52,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 			return (nest->rooms[start].links[i]);
 		}
 	}
+
 	return (-1);
 }
 

@@ -30,7 +30,7 @@ void		ft_show_sets(t_map *nest)
 				printf("%d ", cur_node->num);
 				cur_node = cur_node->next;
 			}
-			printf("\nlen - %d ants = %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0);
+			printf("\nlen - %d ants = %d turns - %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0, cur_set->turns);
 			cur_set = cur_set->next;
 		}
 		printf("sum - %d\n", cur_lst->sum);
@@ -67,6 +67,7 @@ int			make_set(t_map *nest, t_lst *lst, int cur)
 
 	if (!(new = new_set(nest, cur)))
 		return (0);
+	set_node(new, cur);
 	i = -1;
 	while (++i < nest->rooms[cur].num_of_links)
 	{
@@ -74,7 +75,7 @@ int			make_set(t_map *nest, t_lst *lst, int cur)
 			 && nest->rooms[nest->rooms[cur].links[i]].weght == nest->rooms[cur].weght + 1)
 			 || nest->rooms[cur].links[i] == nest->index_end)
 		{
-			set_node(new, cur);
+			set_node(new, nest->rooms[cur].links[i]);
 			cur = nest->rooms[cur].links[i];
 			++new->len;
 			i = -1;

@@ -12,17 +12,45 @@
 
 #include "../lem_in.h"
 
+void 	find_max(t_lst *lst)
+{
+	t_sets		*cur_set;
+
+	cur_set = lst->sets;
+	while (cur_set)
+	{
+		if (cur_set->turns > lst->sum)
+			lst->sum = cur_set->turns;
+		cur_set = cur_set->next;
+	}
+}
+
+int		is_sorted(t_sets *sets)
+{
+	t_sets		*cur_set;
+
+	cur_set = sets;
+	while (cur_set && cur_set->next)
+	{
+		if (cur_set->next->turns && cur_set->turns > cur_set->next->turns)
+			return (0);
+		if (!cur_set->next->turns && cur_set->turns > cur_set->next->len)
+			return (0);
+		cur_set = cur_set->next;
+	}
+	return (1);
+}
+
 int 	calculate_turns(t_map *nest, t_lst *lst)
 {
 	t_sets		*cur_set;
-	int 		i;
 
 	cur_set = lst->sets;
 	cur_set->turns = nest->ants + cur_set->len;
-	i = 0;
-	while (cur_set)
+	while (!is_sorted(lst->sets))
 	{
-		if (cur_set->next)
+		cur_set = lst->sets;
+		while (cur_set && cur_set->next)
 		{
 			if (!cur_set->next->turns && cur_set->turns > cur_set->next->len)
 			{
@@ -34,11 +62,9 @@ int 	calculate_turns(t_map *nest, t_lst *lst)
 				--cur_set->turns;
 				++cur_set->next->turns;
 			}
+			cur_set = cur_set->next;
 		}
-		if (cur_set->turns >= i)
-			i = cur_set->turns;
-		cur_set = cur_set->next;
 	}
-	lst->sum = i;
+	find_max(lst);
 	return (0);
 }
