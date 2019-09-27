@@ -30,7 +30,7 @@ void		ft_show_sets(t_map *nest)
 				printf("%d ", cur_node->num);
 				cur_node = cur_node->next;
 			}
-			printf("\nlen - %d ants = %d turns - %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0, cur_set->turns);
+			printf("len - %d ants = %d turns - %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0, cur_set->turns);
 			cur_set = cur_set->next;
 		}
 		printf("sum - %d\n", cur_lst->sum);
