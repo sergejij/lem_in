@@ -9,7 +9,7 @@ t_lst	*choose_set(t_lst *lst)
 	cur = lst;
 	while (cur)
 	{
-		if (cur->sum < tmp->sum)
+		if ((cur->sum < tmp->sum && !cur->bad) || tmp->bad)
 			tmp = cur;
 		cur = cur->next;
 	}
@@ -38,8 +38,8 @@ void	main_solution(t_map *nest)
 	//show_map(nest);
 	ft_malloc_and_fill_ways(nest);
 	ft_solution(nest);
+//	ft_show_sets(nest);
 	if (nest->sets)
 		print_solution(choose_set(nest->sets), nest);
-	ft_show_sets(nest);
 //	show_map(nest);
 }

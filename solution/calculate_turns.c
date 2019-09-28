@@ -16,9 +16,12 @@ void 	find_max(t_lst *lst)
 {
 	t_sets		*cur_set;
 
+	lst->sum = 0;
 	cur_set = lst->sets;
 	while (cur_set)
 	{
+		if (cur_set->turns < cur_set->len)
+			lst->bad = 1;
 		if (cur_set->turns > lst->sum)
 			lst->sum = cur_set->turns;
 		cur_set = cur_set->next;
@@ -52,12 +55,12 @@ int 	calculate_turns(t_map *nest, t_lst *lst)
 		cur_set = lst->sets;
 		while (cur_set && cur_set->next)
 		{
-			if (!cur_set->next->turns && cur_set->turns >= cur_set->next->len)
+			if (!cur_set->next->turns && cur_set->turns > cur_set->next->len)
 			{
 				--cur_set->turns;
 				cur_set->next->turns = cur_set->next->len + 1;
 			}
-			while (cur_set->next->turns && cur_set->turns >= cur_set->next->turns)
+			while (cur_set->next->turns && cur_set->turns > cur_set->next->turns)
 			{
 				--cur_set->turns;
 				++cur_set->next->turns;

@@ -31,6 +31,8 @@ void	make_step(t_lst *lst)
 			{
 				--cur_set->num_of_ants;
 				cur_node->ant += !cur_node->ant ? order : lst->num_of_sets;
+				if (cur_node->ant > lst->all_ants)
+					--cur_node->ant;
 			}
 			else if (!cur_node->prev && cur_set->num_of_ants <= 0)
 				cur_node->ant = 0;
@@ -69,6 +71,7 @@ int 	print_solution(t_lst *lst, t_map *nest)
 	int 		i;
 
 	find_ends(lst);
+	lst->all_ants = nest->ants;
 	printf("%s\n", nest->str);
 	while (lst->sum--)
 	{

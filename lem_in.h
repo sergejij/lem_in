@@ -43,6 +43,8 @@ typedef struct		s_lst
 {
 	int 			max_len;
 	int 			sum;
+	int 			all_ants;
+	int 			bad;
 	int 			num_of_sets;
 	t_sets			*sets;
 	struct s_lst	*next;
