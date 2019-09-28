@@ -73,6 +73,7 @@ typedef struct		s_room
 	int				index_prev;
 	int				weght;
 	int 			color;
+	int 			hide;
 	int 			invisib;
 	int 			deadlock;
 	int				looked; //in use_shortest, fill arr index
@@ -248,5 +249,8 @@ int			make_set(t_map *nest, t_lst *lst, int cur);
 int 		count_sets_len(t_map *nest, int cur);
 int			calculate_turns(t_map *nest, t_lst *lst);
 
+
+
+void    ft_delete_deadlocks(t_map *nest, int i);
 
 #endif

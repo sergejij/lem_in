@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/lshellie/Desktop/lem_in/. 
+C_INCLUDES = -I/Users/ubartemi/Desktop/lem/. 
 

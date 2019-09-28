@@ -5,7 +5,8 @@ void ft_clear_piece_of_path(t_map *nest, int point_inters, int start, int i)
 	while (++i < nest->rooms[start].num_of_links)
 	{
 		if (nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1 &&
-		(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib))
+		(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib)
+		&& !nest->rooms[nest->rooms[start].links[i]].hide)
 		{
 			nest->rooms[start].sh = 0;
 			nest->rooms[nest->rooms[start].links[i]].sh = 0;
@@ -25,7 +26,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 	{
 		if ((nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1 /*|| nest->rooms[nest->rooms[start].links[i]].invisib*/) &&
 				(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib)
-				&& !nest->rooms[nest->rooms[start].links[i]].sh) // косяк с условием прыгает на way[2] - 1-4
+				&& !nest->rooms[nest->rooms[start].links[i]].sh && !nest->rooms[nest->rooms[start].links[i]].hide) // косяк с условием прыгает на way[2] - 1-4
 		{
 			nest->ways[ft_find_index_ways(nest, start, nest->rooms[start].links[i])].shortest = *count_path; // сохраняем трубку, но если встретим пересечение надо либо удалять либо потом начинать отсюда
 			if (!nest->rooms[start].start)

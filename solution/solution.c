@@ -21,6 +21,7 @@ void	ft_solution(t_map *nest)
 
 	nest->index_start = ft_found_start(nest);
 	ft_find_shortest(nest, -1); // тут не должна вернуть -1, так как еще нет forb_new_way
+    ft_delete_deadlocks(nest, -1);
 	ft_record_ways(nest, -1, -1, nest->index_end);
 	find_sets(nest);
 //	ft_write_shortest(nest);
@@ -38,7 +39,7 @@ void	main_solution(t_map *nest)
 	//show_map(nest);
 	ft_malloc_and_fill_ways(nest);
 	ft_solution(nest);
-//	ft_show_sets(nest);
+	//ft_show_sets(nest);
 	if (nest->sets)
 		print_solution(choose_set(nest->sets), nest);
 //	show_map(nest);
