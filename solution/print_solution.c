@@ -87,7 +87,7 @@ int 	print_solution(t_lst *lst, t_map *nest)
 				{
 					if (!cur_node->visited && cur_node->ant)
 					{
-						printf("L%d-%s ", cur_node->ant - 1, nest->rooms[cur_node->num].name);
+						printf("L%d-%s ", cur_node->ant, nest->rooms[cur_node->num].name);
 						cur_node->visited = 1;
 						cur_node = cur_set->nodes_start;
 					}

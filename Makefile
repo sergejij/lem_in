@@ -6,7 +6,7 @@
 #    By: lshellie <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/23 16:35:44 by lshellie          #+#    #+#              #
-#    Updated: 2019/08/23 16:35:46 by lshellie         ###   ########.fr        #
+#    Updated: 2019/09/30 14:26:36 by ubartemi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ OBJ_VIZ = $(SRC_VIZ:.c=.o)
 
 LIB = libft/libft.a
 
-LEM = lem_in
+LEM = lem-in
 
 VIZ = vizualizer
 

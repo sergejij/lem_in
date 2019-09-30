@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 libft/libft.h
-/Users/ubartemi/Desktop/lem/libft/libft.h
+/Users/ubartemi/Desktop/lem1/libft/libft.h
 stdio.h
 -
 
-/Users/ubartemi/Desktop/lem/libft/libft.h
+/Users/ubartemi/Desktop/lem1/libft/libft.h
 string.h
 -
 stdlib.h
@@ -20,87 +20,87 @@ stdlib.h
 unistd.h
 -
 
-/Users/ubartemi/Desktop/lem/main.c
+/Users/ubartemi/Desktop/lem1/main.c
 lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/auxiliary.c
+/Users/ubartemi/Desktop/lem1/solution/auxiliary.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/calculate_turns.c
+/Users/ubartemi/Desktop/lem1/solution/calculate_turns.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/delete_deadlocks.c
+/Users/ubartemi/Desktop/lem1/solution/delete_deadlocks.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/find_new_paths.c
+/Users/ubartemi/Desktop/lem1/solution/find_new_paths.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/line_breaker.c
+/Users/ubartemi/Desktop/lem1/solution/line_breaker.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/print_solution.c
+/Users/ubartemi/Desktop/lem1/solution/print_solution.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/sets.c
+/Users/ubartemi/Desktop/lem1/solution/sets.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/sets_basic.c
+/Users/ubartemi/Desktop/lem1/solution/sets_basic.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/shortest_way.c
+/Users/ubartemi/Desktop/lem1/solution/shortest_way.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/solution.c
+/Users/ubartemi/Desktop/lem1/solution/solution.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/use_shortest.c
+/Users/ubartemi/Desktop/lem1/solution/use_shortest.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/solution/ways.c
+/Users/ubartemi/Desktop/lem1/solution/ways.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/check_parts.c
+/Users/ubartemi/Desktop/lem1/validation/check_parts.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/define.c
+/Users/ubartemi/Desktop/lem1/validation/define.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/find.c
+/Users/ubartemi/Desktop/lem1/validation/find.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/free.c
+/Users/ubartemi/Desktop/lem1/validation/free.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/make_links.c
+/Users/ubartemi/Desktop/lem1/validation/make_links.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/make_map.c
+/Users/ubartemi/Desktop/lem1/validation/make_map.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/read_and_save.c
+/Users/ubartemi/Desktop/lem1/validation/read_and_save.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
-/Users/ubartemi/Desktop/lem/validation/validation.c
+/Users/ubartemi/Desktop/lem1/validation/validation.c
 ../lem_in.h
-/Users/ubartemi/Desktop/lem/lem_in.h
+/Users/ubartemi/Desktop/lem1/lem_in.h
 
