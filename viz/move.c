@@ -54,7 +54,7 @@ void		exec_turn(char *str, t_mlx *mlx)
 	while (turn[++i])
 	{
 		ant_n_room = ft_strsplit(turn[i], '-');
-		ant = ft_atoi(&ant_n_room[0][1]);
+		ant = ft_atoi(&ant_n_room[0][1]) - 1;
 		room = find_index_by_name(mlx->map->rooms, \
 		mlx->map->num_of_rooms, ant_n_room[1]);
 		set_dx_dy(mlx, ant, room);

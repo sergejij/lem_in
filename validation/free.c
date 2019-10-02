@@ -12,15 +12,6 @@
 
 #include "../lem_in.h"
 
-void		free_ways(t_way *ways, int num)
-{
-	int 	i;
-
-	i = -1;
-	while (++i < num)
-		free(&ways[i]);
-}
-
 void		free_sets(t_lst *lst)
 {
 	t_sets		*cur_set;
@@ -109,7 +100,7 @@ void			free_map(t_map **map)
 	if (!map || !*map)
 		return ;
 	free_rooms(&(*map)->rooms, (*map)->num_of_rooms);
-	free_ways((*map)->ways, (*map)->num_of_ways);
+	free((*map)->ways);
 	free_sets((*map)->sets);
 	free((*map)->str);
 	free(*map);

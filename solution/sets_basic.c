@@ -47,6 +47,8 @@ void		put_set(t_lst *lst, t_sets *new)
 		prev = cur;
 		cur = cur->next;
 	}
+	if (prev)
+	    prev->next = new;
 }
 
 t_lst		*new_lst(void)

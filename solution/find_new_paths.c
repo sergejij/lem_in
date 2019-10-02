@@ -38,7 +38,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 		}
 		else if (nest->rooms[nest->rooms[start].links[i]].end)
 		{
-			(*count_path)++;
+/*			(*count_path)++;*/
 			return (-1);
 		}
 		else if (nest->rooms[nest->rooms[start].links[i]].weght != nest->rooms[start].weght + 1 &&
@@ -46,6 +46,11 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 				 !nest->rooms[nest->rooms[start].links[i]].invisib && !nest->rooms[nest->rooms[start].links[i]].start)
 		{
 			ft_clear_piece_of_path(nest, nest->rooms[start].links[i], tmp, -1);
+			if (nest->rooms[tmp].num_of_links > *count_path)
+			{
+			    start = tmp;
+                continue;
+            }
 			return (nest->rooms[start].links[i]);
 		}
 	}
@@ -64,6 +69,7 @@ void ft_remove_weight(t_map *nest, int i)
 	}
 }
 
+/*
 int    is_free_way(t_map *nest, int start, int i)
 {
    while (++i < nest->rooms[start].num_of_links)
@@ -72,6 +78,7 @@ int    is_free_way(t_map *nest, int start, int i)
    }
    return 1;
 }
+*/
 
 void	ft_find_new_paths(t_map *nest, int count_path) // если количество путей 1, надо искать 2 и тд
 {
@@ -79,20 +86,17 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 	int i;
 
 	i = -1;
-	while (!is_free_way(nest, nest->index_start, -1) && (index_forb = ft_find_new_path(nest, -1, nest->index_start, &count_path)) != -1) // но надо тут менять, чтобы не искал forbbiden
+	while ((index_forb = ft_find_new_path(nest, -1, nest->index_start, &count_path)) != -1)
 	{
 		find_sets(nest);
-		// вернул не -1 значит путь не найден, а найдена вершина пересечения с запрещенной линией
-		//index_forb - вершина пересечения нового пути и запрещенного пути
-		// пускаю в бой ft_line_breaker();
+        //ft_show_sets(nest);
 		ft_line_breaker(nest, index_forb);
-		// обрезано пересечение, надо обнулить веса и форб иначе не получится найти путь
 		ft_remove_weight(nest, -1);
 		ft_find_shortest(nest, -1);
 	}
-	if (nest->rooms[nest->index_start].num_of_links + 1 >= count_path
-		&& nest->rooms[nest->index_end].num_of_links + 1 >= count_path)
-		ft_find_new_paths(nest, count_path + 1); //  так как нашел путь мы увеличиваем, пока хз как это использовать
+	if (nest->rooms[nest->index_start].num_of_links + 5 >= count_path
+		&& nest->rooms[nest->index_end].num_of_links + 5 >= count_path)
+		ft_find_new_paths(nest, count_path + 1);
 	else
 		find_sets(nest);
 }
