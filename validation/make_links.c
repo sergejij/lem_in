@@ -74,7 +74,7 @@ void		set_links(t_links *links, char **split)
 	}
 }
 
-void		check_links_duplicates(t_links *links)
+int			check_links_duplicates(t_links *links)
 {
 	int 	i;
 	int 	j;
@@ -82,6 +82,8 @@ void		check_links_duplicates(t_links *links)
 	i = -1;
 	while (links->first[++i])
 	{
+		if (!ft_strcmp(links->first[i], links->second[i]))
+			return (0);
 		j = i;
 		while (links->first[++j])
 		{
@@ -93,6 +95,7 @@ void		check_links_duplicates(t_links *links)
 			}
 		}
 	}
+	return (1);
 }
 
 int 		make_links(t_map *map, char **split)
@@ -100,7 +103,8 @@ int 		make_links(t_map *map, char **split)
 	t_links	links;
 
 	set_links(&links, split);
-	check_links_duplicates(&links);
+	if (!(check_links_duplicates(&links)))
+		return (0);
 	if (!(count_num_of_links(map, &links)))
 	{
 		return (0);
