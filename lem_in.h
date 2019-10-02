@@ -147,10 +147,9 @@ char			*ft_free_split(char **split, int num);
  * validation.c
  */
 
-int		check_duplicates_links(char **split, int i);
 int		validation(char *map);
 int 	check_duplicates(t_room *rooms, int num);
-int 	check_links(char **split);
+int     check_start_end(t_map *nest);
 
 /*
  * define.c

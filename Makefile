@@ -31,19 +31,23 @@ OBJ_VIZ = $(SRC_VIZ:.c=.o)
 
 LIB = libft/libft.a
 
+MLX = mlx
+
 LEM = lem-in
 
 VIZ = vizualizer
 
 all: $(LEM) $(VIZ)
 
-$(VIZ): $(OBJ_VIZ)
-	gcc -Wall -Wextra -Werror $(LIB) -o $(VIZ) $(OBJ_VIZ) $(OBJ_VAL) -L mlx -l mlx -framework OpenGL -framework AppKit
+$(VIZ): $(OBJ_VIZ) $(MLX)
+	gcc -Wall -Wextra -Werror $(LIB) -o $(VIZ) $(OBJ_VIZ) $(OBJ_VAL) -L ./mlx -lmlx -framework OpenGL -framework AppKit
 
 $(LEM): $(OBJ_LEM) $(OBJ_VAL) $(LIB) $(OBJ_SOL)
 	gcc -Wall -Wextra -Werror $(LIB) -o $(LEM) $(OBJ_LEM) $(OBJ_VAL) $(OBJ_SOL)
 $(LIB):
 	make -C ./libft
+$(MLX):
+	make -C ./mlx
 $(OBJ_VAL):
 	gcc -c -I lem_in.h $(addprefix validation/, $(SRC_VAL))
 $(OBJ_LEM):

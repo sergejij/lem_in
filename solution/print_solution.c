@@ -69,12 +69,14 @@ int 	print_solution(t_lst *lst, t_map *nest)
 	t_nodes		*cur_node;
 	t_sets		*cur_set;
 	int 		i;
+	int         fl;
 
 	find_ends(lst);
 	lst->all_ants = nest->ants;
 	printf("%s\n", nest->str);
 	while (lst->sum--)
 	{
+        fl = 0;
 		make_step(lst);
 		i = -1;
 		while (++i <= lst->max_len)
@@ -87,7 +89,10 @@ int 	print_solution(t_lst *lst, t_map *nest)
 				{
 					if (!cur_node->visited && cur_node->ant)
 					{
-						printf("L%d-%s ", cur_node->ant, nest->rooms[cur_node->num].name);
+                        if (fl == 1)
+                            printf(" ");
+						printf("L%d-%s", cur_node->ant, nest->rooms[cur_node->num].name);
+						fl = 1;
 						cur_node->visited = 1;
 						cur_node = cur_set->nodes_start;
 					}
