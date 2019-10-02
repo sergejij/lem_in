@@ -76,5 +76,6 @@ int		validation(char *map)
 	if (!check_part1(split, mas) || !check_part2(split, mas) \
 	|| !check_part3(split, mas) || !check_part4(split))
 		return (0);
+	free_split(split);
 	return (1);
 }

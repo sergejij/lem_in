@@ -12,6 +12,53 @@
 
 #include "../lem_in.h"
 
+void		free_ways(t_way *ways, int num)
+{
+	int 	i;
+
+	i = -1;
+	while (++i < num)
+		free(&ways[i]);
+}
+
+void		free_sets(t_lst *lst)
+{
+	t_sets		*cur_set;
+	t_lst		*tmp_lst;
+	t_nodes		*tmp_nodes;
+	t_sets		*tmp_set;
+
+	while (lst)
+	{
+		cur_set = lst->sets;
+		while (cur_set)
+		{
+			while (cur_set->nodes_start)
+			{
+				tmp_nodes = cur_set->nodes_start;
+				cur_set->nodes_start = cur_set->nodes_start->next;
+				free(tmp_nodes);
+			}
+			tmp_set = cur_set;
+			cur_set = cur_set->next;
+			free(tmp_set);
+		}
+		tmp_lst = lst;
+		lst = lst->next;
+		free(tmp_lst);
+	}
+}
+
+void		free_split(char **split)
+{
+	int 	i;
+
+	i = 0;
+	while (split[i])
+		++i;
+	ft_free_split(split, i);
+}
+
 void		free_rooms(t_room **rooms, int num)
 {
 	int		i;
@@ -62,6 +109,9 @@ void			free_map(t_map **map)
 	if (!map || !*map)
 		return ;
 	free_rooms(&(*map)->rooms, (*map)->num_of_rooms);
+	free_ways((*map)->ways, (*map)->num_of_ways);
+	free_sets((*map)->sets);
+	free((*map)->str);
 	free(*map);
-	map = 0;
+	*map = 0;
 }

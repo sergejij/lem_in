@@ -135,6 +135,8 @@ t_map		*make_map(char *map);
 void		free_rooms(t_room **rooms, int num);
 void		free_map(t_map **map);
 void		show_map(t_map *map);
+void		free_split(char **split);
+void		free_sets(t_lst *lst);
 
 /*
  * read_and_save.c
@@ -247,7 +249,6 @@ void 		find_sets(t_map *nest);
 int			make_set(t_map *nest, t_lst *lst, int cur);
 int 		count_sets_len(t_map *nest, int cur);
 int			calculate_turns(t_map *nest, t_lst *lst);
-
 
 
 void    ft_delete_deadlocks(t_map *nest, int i);

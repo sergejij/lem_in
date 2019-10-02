@@ -110,5 +110,7 @@ int 		make_links(t_map *map, char **split)
 		return (0);
 	}
 	link_rooms(map, &links);
+	free_split(links.second);
+	free_split(links.first);
 	return (1);
 }

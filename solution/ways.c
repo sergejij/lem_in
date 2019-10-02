@@ -1,4 +1,4 @@
-#include "../lem_in.h"
+ #include "../lem_in.h"
 
 void	ft_record_ways(t_map *nest,	int j,	int i, int end)
 {

@@ -12,34 +12,6 @@
 
 #include "../lem_in.h"
 
-void		free_lst(t_lst *lst)
-{
-	t_sets		*cur;
-	t_lst		*lst_tmp;
-	t_nodes		*tmp_nodes;
-	t_sets		*tmp;
-
-	while (lst)
-	{
-		cur = lst->sets;
-		while (cur)
-		{
-			tmp = cur;
-			cur = cur->next;
-			while (cur->nodes_start)
-			{
-				tmp_nodes = cur->nodes_start;
-				cur->nodes_start = cur->nodes_start->next;
-				free(tmp_nodes);
-			}
-			free(tmp);
-		}
-		lst_tmp = lst;
-		lst = lst->next;
-		free(lst_tmp);
-	}
-}
-
 t_sets		*new_set(t_map *nest, int cur)
 {
 	t_sets		*new;

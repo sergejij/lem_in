@@ -82,8 +82,10 @@ int 		count_rooms(char **split)
 	i = -1;
 	num = 0;
 	while (split[++i])
+	{
 		if (is_room(split[i]))
 			++num;
+	}
 	return (num);
 }
 
@@ -97,6 +99,7 @@ int			get_name_x_y(t_room *room, char *line)
 		return (0);
 	room->x = ft_atoi(split[1]);
 	room->y = ft_atoi(split[2]);
+	free_split(split);
 	return (1);
 }
 
@@ -145,5 +148,6 @@ t_map		*make_map(char *map)
 		free_map(&new_map);
 		return (0);
 	}
+	free_split(split);
 	return (new_map);
 }
