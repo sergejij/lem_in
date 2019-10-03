@@ -20,7 +20,9 @@ void ft_clear_piece_of_path(t_map *nest, int point_inters, int start, int i)
 int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 {
 	int tmp;
+    int prev;
 
+    prev = start;
 	tmp = start;
 	while (++i < nest->rooms[start].num_of_links)
 	{
@@ -33,16 +35,17 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 				nest->rooms[start].sh = *count_path;
 			if (!nest->rooms[nest->rooms[start].links[i]].end)
 				nest->rooms[nest->rooms[start].links[i]].sh = *count_path;
+            prev = start;
 			start = nest->rooms[start].links[i];
 			i = -1;
 		}
-		else if (nest->rooms[nest->rooms[start].links[i]].end)
+		else if (nest->rooms[nest->rooms[start].links[i]].end && nest->rooms[prev].sh > 1)
 		{
 /*			(*count_path)++;*/
 			return (-1);
 		}
 		else if (nest->rooms[nest->rooms[start].links[i]].weght != nest->rooms[start].weght + 1 &&
-				 nest->rooms[nest->rooms[start].links[i]].forb_new_way &&
+                nest->rooms[nest->rooms[start].links[i]].forb_new_way &&
 				 !nest->rooms[nest->rooms[start].links[i]].invisib && !nest->rooms[nest->rooms[start].links[i]].start)
 		{
 			ft_clear_piece_of_path(nest, nest->rooms[start].links[i], tmp, -1);
@@ -53,8 +56,10 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
             }
 			return (nest->rooms[start].links[i]);
 		}
+        else if (nest->rooms[nest->rooms[start].links[i]].weght != nest->rooms[start].weght + 1 &&
+                 !nest->rooms[nest->rooms[start].links[i]].invisib && !nest->rooms[nest->rooms[start].links[i]].start)
+            ft_clear_piece_of_path(nest, nest->rooms[start].links[i], tmp, -1);
 	}
-
 	return (-1);
 }
 

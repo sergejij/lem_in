@@ -88,12 +88,6 @@ typedef struct		s_way
 	int				invisible;
 }					t_way;
 
-typedef struct		s_path
-{
-	int 			*p;
-	int				len;
-}					t_path;
-
 typedef struct		s_map
 {
 	int 			ants;
@@ -104,7 +98,6 @@ typedef struct		s_map
 	int 			*forbidden_rooms;
 	t_room			*rooms;
 	t_way			*ways;
-	t_path			*paths;
 	t_lst			*sets;
 	int				*sh_path;
 	char 			*str;

@@ -45,7 +45,7 @@ int	ft_check_next_rooms(t_map *nest, int current)
 	{
 		/*if (nest->rooms[nest->rooms[current].links[i]].forb_new_way)
 			return (nest->rooms[current].links[i]); // тут выходит при поиске второго пути*/
-		if (nest->rooms[nest->rooms[current].links[i]].forbbiden)
+		if (nest->rooms[nest->rooms[current].links[i]].forbbiden || nest->rooms[current].end)
 			continue ;
 		tmp = nest->rooms[current].weght + 1;
 		if (tmp < nest->rooms[nest->rooms[current].links[i]].weght &&
