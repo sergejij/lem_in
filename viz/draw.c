@@ -78,6 +78,19 @@ void		draw_room(t_room *room, t_mlx *mlx)
 		draw_line(mlx, room, &mlx->map->rooms[room->links[j]]);
 }
 
+void		put_names(t_mlx *mlx)
+{
+	t_pos	pos;
+	int 	i;
+
+	i = -1;
+	while (++i < mlx->map->num_of_rooms)
+	{
+		set_pos(&pos, mlx, &mlx->map->rooms[i]);
+		mlx_string_put(mlx->mlx, mlx->win, pos.x0 - pos.y, pos.y0 + pos.x, set_colors(0, 255, 255, 255), mlx->map->rooms[i].name);
+	}
+}
+
 void		draw(t_mlx *mlx)
 {
 	t_room	*cur;
@@ -102,4 +115,5 @@ void		draw(t_mlx *mlx)
 		cur[i].visited = 1;
 	}
 	mlx_put_image_to_window(mlx->mlx, mlx->win, mlx->img->img, 0, 0);
+	put_names(mlx);
 }
