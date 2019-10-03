@@ -87,7 +87,7 @@ void		put_names(t_mlx *mlx)
 	while (++i < mlx->map->num_of_rooms)
 	{
 		set_pos(&pos, mlx, &mlx->map->rooms[i]);
-		mlx_string_put(mlx->mlx, mlx->win, pos.x0 - pos.y, pos.y0 + pos.x, set_colors(0, 255, 255, 255), mlx->map->rooms[i].name);
+		mlx_string_put(mlx->mlx, mlx->win, pos.x0 + pos.x, pos.y0 + pos.y, set_colors(0, 255, 255, 255), mlx->map->rooms[i].name);
 	}
 }
 

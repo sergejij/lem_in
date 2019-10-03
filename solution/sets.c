@@ -27,7 +27,7 @@ void		ft_show_sets(t_map *nest)
 			cur_node = cur_set->nodes_start;
 			while (cur_node)
 			{
-				printf("%d ", cur_node->num);
+				printf("%s ", nest->rooms[cur_node->num].name);
 				cur_node = cur_node->next;
 			}
 			printf("len - %d ants = %d turns - %d bad  - %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0, cur_set->turns, cur_lst->bad);
