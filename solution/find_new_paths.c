@@ -17,6 +17,32 @@ void ft_clear_piece_of_path(t_map *nest, int point_inters, int start, int i)
 	}
 }
 
+void    ft_delete_sh(t_map *nest, int count_path, int i)
+{
+    while (++i < nest->num_of_rooms)
+    {
+        if (nest->rooms[i].sh == count_path)
+            nest->rooms[i].sh = 0;
+    }
+}
+
+void    ft_delete_garbage(t_map *nest, int count_path, int i, int j)
+{
+    while (++i < nest->num_of_rooms)
+    {
+        if (nest->rooms[i].sh == count_path)
+        {
+            while (++j < nest->rooms[i].num_of_links)
+            {
+                if (nest->rooms[nest->rooms[i].links[j]].sh == count_path)
+                    break;
+                if (j + 1 == nest->rooms[i].num_of_links)
+                    ft_delete_sh(nest, count_path, -1);
+            }
+        }
+    }
+}
+
 int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 {
 	int tmp;
@@ -28,7 +54,8 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 	{
 		if ((nest->rooms[nest->rooms[start].links[i]].weght == nest->rooms[start].weght + 1) &&
 				(!nest->rooms[nest->rooms[start].links[i]].forb_new_way || nest->rooms[nest->rooms[start].links[i]].invisib)
-				&& !nest->rooms[nest->rooms[start].links[i]].sh && !nest->rooms[nest->rooms[start].links[i]].hide)
+				&& !nest->rooms[nest->rooms[start].links[i]].sh && !nest->rooms[nest->rooms[start].links[i]].hide
+				&& !nest->rooms[nest->rooms[start].links[i]].end)
 		{
 			nest->ways[ft_find_index_ways(nest, start, nest->rooms[start].links[i])].shortest = *count_path; // сохраняем трубку, но если встретим пересечение надо либо удалять либо потом начинать отсюда
 			if (!nest->rooms[start].start)
@@ -56,10 +83,8 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
             }
 			return (nest->rooms[start].links[i]);
 		}
-        else if (nest->rooms[nest->rooms[start].links[i]].weght != nest->rooms[start].weght + 1 &&
-                 !nest->rooms[nest->rooms[start].links[i]].invisib && !nest->rooms[nest->rooms[start].links[i]].start)
-            ft_clear_piece_of_path(nest, nest->rooms[start].links[i], tmp, -1);
 	}
+	ft_delete_garbage(nest, *count_path, -1, -1);
 	return (-1);
 }
 
@@ -73,17 +98,6 @@ void ft_remove_weight(t_map *nest, int i)
 		nest->rooms[i].forbbiden = 0;
 	}
 }
-
-/*
-int    is_free_way(t_map *nest, int start, int i)
-{
-   while (++i < nest->rooms[start].num_of_links)
-   {
-
-   }
-   return 1;
-}
-*/
 
 void	ft_find_new_paths(t_map *nest, int count_path) // если количество путей 1, надо искать 2 и тд
 {
