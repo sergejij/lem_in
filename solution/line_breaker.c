@@ -14,14 +14,14 @@ int ft_find_intersections(t_map *nest, int index_forb, int i, int j)
 	{
 		while (++j < room[index_forb].num_of_links)
 		{
-			if (room[room[index_forb].links[j]].forb_new_way &&
+			if (room[room[index_forb].links[j]].sh == room[index_forb].sh &&
 				((room[index_forb].weght - 1) == room[room[index_forb].links[j]].weght)  &&
 				(!nest->ways[ft_find_index_ways(nest, index_forb, room[index_forb].links[j])].invisible)) // не является ли связь в пересечении невидимой
 			{
 				index_forb = room[index_forb].links[j];
 				j = 0;
 			}
-			if (room[room[index_forb].links[j]].forb_new_way &&
+			if (room[room[index_forb].links[j]].sh == room[index_forb].sh &&
 				room[index_forb].num_of_links > 2)
 				return (index_forb);
 		}
@@ -34,20 +34,18 @@ void ft_delete_ways(t_map *nest, int start, int end, int i)
 	// 1. иду по связи старта, по форбиден
 	// 2. отмечаю эту трубку как невидимую (или прям удалять?)
 	// 3. перехожу на след и так до енд
-	int j;
 	t_room *room;
 	int index_way;
 
 	room = nest->rooms;
-	j = -1;
 	while (++i < room[start].num_of_links && start != end)
 	{
-		if (room[room[start].links[i]].forb_new_way &&
+		if (room[room[start].links[i]].sh == room[start].sh &&
 			(room[start].weght + 1) == room[room[start].links[i]].weght)
 		{
 			nest->rooms[start].invisib = 1;
 			nest->rooms[room[start].links[i]].invisib = 1;
-			nest->rooms[end].forb_new_way = 0;
+            room[room[end].links[i]].sh = 0;
 			index_way = ft_find_index_ways(nest, start, room[start].links[i]);
 			nest->ways[index_way].invisible = 1;
 			start = room[start].links[i];
