@@ -28,7 +28,7 @@ void	ft_solution(t_map *nest)
 	if (nest->rooms[nest->index_start].num_of_links > 1
 		&& nest->rooms[nest->index_end].num_of_links > 1)
 		ft_find_new_paths(nest, 2);
-    //ft_show_sets(nest);
+   // ft_show_sets(nest);
 }
 
 void	main_solution(t_map *nest)

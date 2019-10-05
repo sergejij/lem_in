@@ -26,9 +26,32 @@ void    ft_delete_sh(t_map *nest, int count_path, int i)
     }
 }
 
+int     ft_link_start(t_map *nest, int count_path, int start, int i)
+{
+    while (++i < nest->rooms[start].num_of_links)
+    {
+        if (nest->rooms[nest->rooms[start].links[i]].sh == count_path)
+            return (1);
+    }
+    return (0);
+}
+
+int     ft_link_end(t_map *nest, int count_path, int end, int i)
+{
+    while (++i < nest->rooms[end].num_of_links)
+    {
+        if (nest->rooms[nest->rooms[end].links[i]].sh == count_path)
+            return (1);
+    }
+    return (0);
+}
+
 void    ft_delete_garbage(t_map *nest, int count_path, int i, int j)
 {
-    while (++i < nest->num_of_rooms)
+    if (ft_link_start(nest, count_path, nest->index_start, -1) && ft_link_end(nest, count_path, nest->index_end, -1))
+        return;
+    ft_delete_sh(nest, count_path, -1);
+    /*while (++i < nest->rooms[nest->index_start].num_of_links)
     {
         if (nest->rooms[i].sh == count_path)
         {
@@ -40,7 +63,7 @@ void    ft_delete_garbage(t_map *nest, int count_path, int i, int j)
                     ft_delete_sh(nest, count_path, -1);
             }
         }
-    }
+    }*/
 }
 
 int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
@@ -69,6 +92,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 		else if (nest->rooms[nest->rooms[start].links[i]].end && nest->rooms[prev].sh > 1)
 		{
 /*			(*count_path)++;*/
+            //ft_delete_garbage(nest, *count_path, -1, -1);
 			return (-1);
 		}
 		else if (nest->rooms[nest->rooms[start].links[i]].weght != nest->rooms[start].weght + 1 &&
@@ -81,6 +105,7 @@ int 	ft_find_new_path(t_map *nest, int i, int start, int *count_path)
 			    start = tmp;
                 continue;
             }
+            //ft_delete_garbage(nest, *count_path, -1, -1);
 			return (nest->rooms[start].links[i]);
 		}
 	}
@@ -113,6 +138,7 @@ void	ft_find_new_paths(t_map *nest, int count_path) // если количест
 		ft_remove_weight(nest, -1);
 		ft_find_shortest(nest, -1);
 	}
+    find_sets(nest);
 	if (nest->rooms[nest->index_start].num_of_links + 5 >= count_path
 		&& nest->rooms[nest->index_end].num_of_links + 5 >= count_path)
 		ft_find_new_paths(nest, count_path + 1);

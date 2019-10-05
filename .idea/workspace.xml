@@ -14,11 +14,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1ad90a-cdde-49f3-97ff-c05e1fc340da" name="Default Changelist" comment="tester">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem-in.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem-in.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem-in.dir/solution/find_new_paths.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem-in.dir/solution/find_new_paths.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lem-in" beforeDir="false" afterPath="$PROJECT_DIR$/lem-in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map1" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map2" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps/map6" beforeDir="false" afterPath="$PROJECT_DIR$/maps/map6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solution/find_new_paths.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/find_new_paths.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solution/solution.c" beforeDir="false" afterPath="$PROJECT_DIR$/solution/solution.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,6 +169,8 @@
       <workItem from="1570021663660" duration="1067000" />
       <workItem from="1570100326675" duration="5300000" />
       <workItem from="1570186813441" duration="3935000" />
+      <workItem from="1570197164702" duration="56000" />
+      <workItem from="1570269597713" duration="3462000" />
     </task>
     <task id="LOCAL-00001" summary="done with validation">
       <created>1567944301141</created>
@@ -268,14 +275,19 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/solution/find_new_paths.c</url>
-          <line>107</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/solution/solution.c</url>
           <line>36</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/find_new_paths.c</url>
+          <line>132</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/solution/solution.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
