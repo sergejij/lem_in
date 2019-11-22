@@ -12,34 +12,7 @@
 
 #include "../lem_in.h"
 
-void		ft_show_sets(t_map *nest)
-{
-	t_lst		*cur_lst;
-	t_sets		*cur_set;
-	t_nodes		*cur_node;
-
-	cur_lst = nest->sets;
-	while (cur_lst)
-	{
-		cur_set = cur_lst->sets;
-		while (cur_set)
-		{
-			cur_node = cur_set->nodes_start;
-			while (cur_node)
-			{
-				printf("%s ", nest->rooms[cur_node->num].name);
-				cur_node = cur_node->next;
-			}
-			printf("len - %d ants = %d turns - %d bad  - %d\n", cur_set->len + 1, cur_set->turns ? cur_set->turns - cur_set->len : 0, cur_set->turns, cur_lst->bad);
-			cur_set = cur_set->next;
-		}
-		printf("sum - %d\n", cur_lst->sum);
-		printf("------\n");
-		cur_lst = cur_lst->next;
-	}
-}
-
-int 		set_node(t_sets *new, int cur)
+int			set_node(t_ways *new, int cur)
 {
 	t_nodes		*cur_node;
 
@@ -62,8 +35,8 @@ int 		set_node(t_sets *new, int cur)
 
 int			make_set(t_map *nest, t_lst *lst, int cur)
 {
-	int 	i;
-	t_sets	*new;
+	int		i;
+	t_ways	*new;
 
 	if (!(new = new_set(nest, cur)))
 		return (0);
@@ -71,13 +44,17 @@ int			make_set(t_map *nest, t_lst *lst, int cur)
 	i = -1;
 	while (++i < nest->rooms[cur].num_of_links)
 	{
-		if ((nest->rooms[nest->rooms[cur].links[i]].sh == nest->rooms[cur].sh
-			 && nest->rooms[nest->rooms[cur].links[i]].weght == nest->rooms[cur].weght + 1)
-			 || nest->rooms[cur].links[i] == nest->index_end)
+		if ((nest->rooms[cur].sh &&
+		nest->rooms[nest->rooms[cur].links[i]].sh == nest->rooms[cur].sh
+			&& nest->rooms[nest->rooms[cur].links[i]].weight
+			> nest->rooms[cur].weight)
+			|| nest->rooms[cur].links[i] == nest->index_end)
 		{
 			set_node(new, nest->rooms[cur].links[i]);
 			cur = nest->rooms[cur].links[i];
 			++new->len;
+			if (cur == nest->index_end)
+				break ;
 			i = -1;
 		}
 	}
@@ -85,10 +62,10 @@ int			make_set(t_map *nest, t_lst *lst, int cur)
 	return (1);
 }
 
-void 		find_sets(t_map *nest)
+void		find_sets(t_map *nest)
 {
-	int 	cur;
-	int 	i;
+	int		cur;
+	int		i;
 	t_lst	*new;
 
 	new = 0;
@@ -96,16 +73,20 @@ void 		find_sets(t_map *nest)
 	i = -1;
 	while (++i < nest->rooms[cur].num_of_links)
 	{
-		if (nest->rooms[nest->rooms[cur].links[i]].sh != 0)
+		if (nest->rooms[cur].links[i] == nest->index_end ||
+		nest->rooms[nest->rooms[cur].links[i]].sh != 0)
 		{
 			if (!new)
 			{
 				if (!(new = new_lst()))
 					return ;
-				set_new_set(&nest->sets, new);
 			}
 			make_set(nest, new, nest->rooms[cur].links[i]);
 		}
 	}
-	calculate_turns(nest, new);
+	if (new)
+	{
+		calculate_turns(nest, new);
+		set_new_set(nest, new);
+	}
 }
